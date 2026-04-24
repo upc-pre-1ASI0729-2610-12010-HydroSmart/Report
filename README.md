@@ -263,3 +263,54 @@ Finalmente, la navegación en HydroSmart cumple con los siguientes principios de
 - Jerarquía: las secciones más relevantes están ubicadas estratégicamente en el centro de la navegación.
 - Retroalimentación visual: se incluyen estados hover y focus que refuerzan la interacción del usuario.
 
+## 4.3. Landing Page UI Design
+
+En esta sección se presenta la propuesta de diseño de interfaz para la Landing Page de HydroSmart. Las decisiones de diseño están fundamentadas en los Style Guidelines establecidos, la arquitectura de información definida y las necesidades identificadas para cada segmento objetivo. El objetivo es transmitir confianza, claridad y sostenibilidad, guiando al visitante de forma progresiva hacia el registro en la plataforma.
+
+### 4.3.1. Landing Page Wireframe
+[Link del Figma](https://shorturl.at/S4uw4)
+#### 1. Home
+- La interfaz presenta un header fijo que incluye el logotipo de HydroSmart y el menú principal con las secciones Inicio, Beneficios, Características, Planes, Nosotros y FAQ, acompañado de un botón de llamada a la acción "Empezar Ahora" visualmente destacado. La sección hero presenta un mensaje principal con un subtítulo descriptivo y un botón de acción. En las secciones intermedias se presentan los beneficios en formato de seis tarjetas con íconos, seguidas de la sección de poder tecnológico. El diseño es claro y enfocado en la conversión, guiando al usuario de manera natural desde el primer contacto hasta la acción final.
+
+<div align="center">
+    <img src="images/homeWireframe.PNG" alt="planes Wireframe" width="500">
+</div>
+
+### 2. Planes y Nosotros
+
+- La sección de planes presenta tres tarjetas comparativas: Básico, Pro y Smart, donde el plan Pro aparece visualmente destacado con fondo oscuro como opción recomendada. Cada tarjeta incluye el nombre del plan, precio y lista de características. Inmediatamente debajo se presenta la sección del equipo con cinco integrantes organizados en fila horizontal, cada uno con su fotografía, nombre y rol.
+
+<div align="center">
+    <img src="images/planesWireframe.PNG" alt="planes Wireframe" width="500">
+</div>
+
+### 3. FAQ
+
+- La sección de preguntas frecuentes adopta un diseño de acordeón que permite al visitante expandir y contraer cada pregunta según su interés. El footer incluye el nombre de la marca, una descripción breve, enlaces de exploración y accesos a redes sociales.
+
+<div align="center">
+    <img src="images/faqWireframe.PNG" alt="planes Wireframe" width="500">
+</div>
+
+### 4.3.2. Landing Page Mock-up
+
+#### 1.Home
+-   El mock-up incorpora los elementos visuales definitivos de HydroSmart. El header presenta el logotipo acompañado de una gota de agua como ícono representativo sobre fondo claro. La sección hero utiliza una fotografía de agua como fondo con texto superpuesto en blanco y el botón "Optimizar Ahora" destacado. La sección de beneficios presenta seis tarjetas con íconos y descripciones que refuerzan la propuesta de valor de la plataforma.
+
+
+<div align="center">
+    <img src="images/homeMockup.PNG" alt="planes Wireframe" width="500">
+</div>
+
+#### 2. Planes y Nosotros
+- La sección de planes presenta tres tarjetas con los planes Básico, Pro y Smart, donde el plan Pro se diferencia visualmente con un fondo oscuro y la etiqueta "Recomendado". Cada tarjeta detalla el precio mensual y las características incluidas. La sección del equipo muestra a los cinco integrantes con sus fotografías, nombres y roles sobre un fondo claro.
+<div align="center">
+    <img src="images/planesMockup.PNG" alt="planes Wireframe" width="500">
+</div>
+
+### 3. FAQ
+- La sección de preguntas frecuentes mantiene el diseño de acordeón con tipografía clara y espaciado generoso. El footer adopta un fondo oscuro con el nombre de la marca, descripción breve, enlaces de exploración y accesos a redes sociales, manteniendo consistencia con la identidad visual de HydroSmart.
+<div align="center">
+    <img src="images/faqMockup.PNG" alt="planes Wireframe" width="500">
+</div>
+
