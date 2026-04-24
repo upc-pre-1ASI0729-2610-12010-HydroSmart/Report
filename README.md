@@ -446,3 +446,27 @@ Este Wireflow muestra el camino que seguiría un usuario al entrar por primera v
 
 
 
+## 4.5. Web Applications Prototyping
+Se realizó los prototipos en figma de la aplicación web de HydroSmart,diseñados para navegadores de escritorio. El objetivo es representar los flujos principales de los segmentos definidos, verificando una experiencia clara y funcional.
+
+**Segmento propietarios de viviendas**
+
+Los propietarios usan la plataforma para monitorear su consumo de agua, revisar alertas, consultar el historial y establecer metas de ahorro.
+
+Desde Home, acceden al Dashboard con información general del consumo. La barra lateral incluye diferentes opciones como Consumption, Alerts y Saving Goals.
+
+**Segmento inquilinos**
+
+Los inquilinos o estudiantes utilizan HydroSmart para controlar su consumo, revisar su historial y recibir recomendaciones para reducir gastos.
+
+El recorrido inicia en Home, donde se muestra un Dashboard con el consumo actual, alertas y progreso de ahorro. El menú lateral incluye diferentes opciones como Consumption, History y Saving Goals.
+
+
+A continuación, se presenta el video con los prototipos navegables: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202419592_upc_edu_pe/IQBZDvKvlEMDT4o77TmulQGBAUkRwwvXkcnDgq3WCwOwbPw?
+
+<div align="center">
+    <img src="images/prototype.png" alt="Prototype" width="500">
+</div>
+
+
+
