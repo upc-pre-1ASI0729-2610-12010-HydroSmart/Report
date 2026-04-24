@@ -314,3 +314,135 @@ En esta sección se presenta la propuesta de diseño de interfaz para la Landing
     <img src="images/faqMockup.PNG" alt="planes Wireframe" width="500">
 </div>
 
+# 4.4  Web Applications UX/UI Design
+
+La sección de Diseño UX/UI de Aplicaciones Web se enfoca en la creación de interfaces y la definición de la experiencia de usuario para la solución web de HydroSmart. Este proceso va desde la conceptualización de las vistas funcionales hasta la definición de flujos de interacción completos, diseñados específicamente para satisfacer las necesidades de nuestros dos segmentos clave: propietarios con áreas verdes o inmuebles en alquiler, e inquilinos y estudiantes con presupuesto limitado.
+
+En esta etapa inicial, se procedió al diseño de mockups de alta fidelidad, los cuales se alinearon con el sistema visual y la identidad de marca adoptados para la plataforma HydroSmart. Este enfoque garantiza la consistencia, simplicidad y una clara orientación a la tarea en todas las interacciones.
+
+Los componentes de la interfaz fueron organizados siguiendo flujos de usuario validados previamente, tomando como referencia los Empathy Maps y User Journey Maps desarrollados en fases anteriores. Esto asegura que cada acción del usuario tenga un propósito claro y un recorrido intuitivo dentro de la experiencia de la plataforma.
+
+La estructura de navegación ha sido concebida para ofrecer una experiencia eficiente e inclusiva, aplicando criterios de accesibilidad (a11y) para garantizar que la plataforma sea usable para todos, y soporte multilenguaje (i18n) para una adopción global.
+
+Se integrarán servicios RESTful para la comunicación con el backend y se crearán prototipos navegables que permitan validar funcionalmente las interacciones más críticas del sistema con usuarios reales. Esto asegurará que la solución digital de HydroSmart no solo sea atractiva visualmente, sino también robusta, intuitiva y alineada con las expectativas de sus usuarios.
+
+## 4.4.1 Web Applications Wireframes.
+
+Login - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-login.PNG" alt="login Wireframe" width="500">
+</div>
+
+Dashboard - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-dashboard1.PNG" alt="dashboard Wireframe" width="500">
+</div>
+
+Dashboard and Notifications - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-dashboard-notifications.PNG" alt="dashboard and notifications Wireframe" width="500">
+</div>
+
+Profile - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-profile.PNG" alt="Profile Wireframe" width="500">
+</div>
+
+Devices 1 - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-devices1.PNG" alt="Devices1 Wireframe" width="500">
+</div>
+
+Devices 2 - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-devices2.PNG" alt="Devices2 Wireframe" width="500">
+</div>
+
+Reports - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-reports.PNG" alt="Reports Wireframe" width="500">
+</div>
+
+Settings - Wireframe
+
+<div align="center">
+    <img src="images/web-applications-wireframes-settings.PNG" alt="Settings Wireframe" width="500">
+</div>
+
+
+## 4.4.2 Web Applications Wireflow Diagrams.
+
+Este Wireflow muestra el camino que seguiría un usuario al entrar por primera vez a la aplicación Web, procede a iniciar sesión y puede consultar el dashboard, su perfil, configuración, notificaciones, etc. Está representado en Wireframes.
+
+<div align="center">
+    <img src="images/web-applications-wireframes-diagram1.PNG" alt="diagram flow Wireframe" width="500">
+</div>
+
+## 4.4.2 Web Applications Mock-ups.
+
+
+Login - Mock-Up
+
+<div align="center">
+    <img src="images/web-applications-mockups-login.PNG" alt="login Mock Up" width="500">
+</div>
+
+Dashboard - Mock-Up
+
+<div align="center">
+    <img src="images/web-applications-mockups-dashboard1.PNG" alt="dashboard Mock Up" width="500">
+</div>
+
+Dashboard and Notifications - Mock-Up
+
+<div align="center">
+    <img src="images/web-applications-mockups-dashboard-notifications.PNG" alt="dashboard and notifications Mock Up" width="500">
+</div>
+
+Profile - Mock-Up
+
+<div align="center">
+    <img src="images/web-applications-mockups-profile.PNG" alt="Profile Mock Up" width="500">
+</div>
+
+Devices 1 - Mock-Up
+
+<div align="center">
+    <img src="images/web-applications-mockups-devices1.PNG" alt="Devices1 Mock Up" width="500">
+</div>
+
+Devices 2 - Mock-Up
+
+<div align="center">
+    <img src="images/web-applications-mockups-devices2.PNG" alt="Devices2 Mock Up" width="500">
+</div>
+
+Reports - Mock-Up
+<div align="center">
+    <img src="images/web-applications-mockups-reports.PNG" alt="Reports Mock Up" width="500">
+</div>
+
+Settings - Mock-Up
+
+<div align="center">
+    <img src="images/web-applications-mockups-settings.PNG" alt="Settings Mock Up" width="500">
+</div>
+
+## 4.4.3 Web Applications User Flow Diagrams.
+
+Este Wireflow muestra el camino que seguiría un usuario al entrar por primera vez a la aplicación Web, procede a iniciar sesión y puede consultar el dashboard, su perfil, configuración, notificaciones, etc. Está representado en Mockups.
+
+<div align="center">
+    <img src="images/web-applications-mockups-diagram1.PNG" alt="diagram flow Wireframe" width="500">
+</div>
+
+
+
+
