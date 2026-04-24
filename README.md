@@ -130,3 +130,136 @@ Finalmente, en esta sección se consolida la información de contacto y legal. P
 </div> 
 <br>
 
+## 4.2. Information Architecture
+
+UX Heuristics & Principles Evaluation 
+<br>
+Usability – Inclusive Design – Information Architecture
+<br>
+CARRERA: Ingeniería de Software
+<br>
+CURSO: Desarrollo de aplicaciones Open Source
+<br>
+NRC: 12010
+<br>
+PROFESOR: Ivan Robles Fernández
+<br>
+CLIENTE(S): Yusnury Vivar Olivos, Camila Díaz Díaz
+<br>
+SITE o APP A EVALUAR: HydroSmart
+
+TAREAS A EVALUAR:
+El alcance de esta evaluación contempla el análisis de la usabilidad en la ejecución de las siguientes tareas:
+
+Segmento Objetivo #1: Propietarios de viviendas con áreas verdes
+
+- **Monitoreas el consumo de agua en el hogar:** Facilidad para visualizar información clara sobre el uso del agua en tiempo real y comprender los datos presentados.
+- **Gestionar el riego de áreas verdes:** Simplicidad en el control y seguimiento del consumo asociado al riego, así como en la identificación de posibles excesos.
+- **Detectar fugas o consumos inusuales:** Eficiencia del sistema para alertar sobre anomalías y facilidad para interpretar dichas notificaciones.
+
+
+Segmento Objetivos #2: Estudiantes que alquilan 
+
+- **Visualizar el consumo compartido del hogar:** Claridad en la presentación del consumo total y facilidad para entender cómo se distribuye entre los usuarios.
+- **Controlar y reducir gastos de agua:** Utilidad de la información brindada para tomar decisiones orientadas al ahorro.
+- **Recibir alertas y recomendaciones:** Facilidad para entender notificaciones relacionadas con el consumo y aplicar sugerencias para mejorar hábitos.
+
+### 4.2.1. Organization Systems
+
+En el diseño de productos digitales centrados en el usuario, la forma en la que se organiza la información es fundamental para garantizar una experiencia clara y eficiente. El Organization System define cómo se estructuran y presentan los contenidos dentro de la interfaz, permitiendo que los usuarios comprendan rápidamente el propósito de la solución y naveguen sin dificultad. Una adecuada organización contribuye a reducir la complejidad, mejorar la orientación y destacar los elementos más importantes.
+
+En el caso de HydroSmart, la Landing Page de su aplicación AquaPulse está estructurada en secciones que siguen una secuencia lógica orientada a la comprensión progresiva del producto. En primer lugar, se presenta un hero section con un mensaje directo que comunica el valor principal de la aplicación, acompañado de un llamado a la acción visible (“Optimizar ahora”). Esta sección busca captar la atención del usuario y motivarlo a interactuar desde el inicio.
+
+A continuación, el contenido se organiza en bloques que desarrollan la propuesta, incluyendo apartados como beneficios, características y funcionalidades clave de AquaPulse. Estas secciones permiten al usuario entender cómo la aplicación contribuye al monitoreo y optimización del consumo de agua en el hogar. Posteriormente, se incorporan elementos complementarios como los planes de suscripción, la presentación del equipo y una sección de preguntas frecuentes, los cuales ayudan a reforzar la confianza y resolver dudas antes de la toma de decisión.
+
+Asimismo, tanto el header como el footer cumplen un rol importante dentro de la estructura, ya que agrupan los accesos principales y secundarios de navegación, facilitando el recorrido del usuario dentro de la página. Esta organización permite que cualquier visitante identifique rápidamente qué es AquaPulse, qué beneficios ofrece y cómo puede comenzar a utilizarla.
+
+En conjunto, la estructura planteada responde a un enfoque centrado en el usuario, asegurando una experiencia ordenada, intuitiva y adaptable a distintos dispositivos.
+
+### 4.2.2. Labeling Systems
+
+En el marco del diseño de la arquitectura de información, los **Labeling Systems** de **HydroSmart** cumplen la función de comunicar de forma clara, coherente y predecible los elementos de interacción y contenido presentes en la interfaz. Cada etiqueta textual utilizada en la navegación, llamados a la acción (CTA), planes y secciones informativas está diseñada para guiar al usuario en su recorrido, facilitando la comprensión de una solución tecnológica compleja y motivando la conversión.
+
+La siguiente tabla resume las etiquetas estratégicas implementadas, su ubicación y su función en la experiencia de usuario:
+
+| Etiqueta | Ubicación / Componente | Función |
+| :--- | :--- | :--- |
+| **Inicio / Beneficios / FAQ** | Header (Navegación) | Enlaces directos a secciones clave. Utiliza términos convencionales para reducir la carga cognitiva. |
+| **Empezar Ahora** | Header / Botón Primario | CTA de alta jerarquía. El uso del imperativo fomenta una decisión inmediata de registro o compra. |
+| **Optimizar Ahora** | Hero Section (CTA) | Refuerza la propuesta de valor del proyecto (optimización) vinculándola a una acción directa. |
+| **Ahorro Estratégico** | Sección "Por qué elegirnos" | Etiqueta de beneficio orientada al valor económico, comunicando eficiencia de forma profesional. |
+| **Poder Tecnológico** | Sección Técnica | Encabezado que posiciona la robustez de la plataforma (IA e IoT) frente al usuario técnico. |
+| **IA Predictiva** | Sección de Características | Terminología técnica específica que describe la funcionalidad avanzada de detección de fugas. |
+| **Básico / Pro / Smart** | Sección de Planes | Clasificación de niveles de servicio. "Pro" y "Smart" sugieren escalabilidad y mayor valor agregado. |
+| **Nuestro Equipo** | Sección de Staff | Identifica el capital humano detrás del proyecto, fomentando la transparencia y la confianza. |
+| **Preguntas Frecuentes** | Sección FAQ | Etiqueta estándar que indica soporte y resolución de dudas comunes de manera accesible. |
+| **Explorar** | Footer (Navegación) | Agrupa enlaces secundarios y legales, manteniendo la consistencia de navegación en el cierre del sitio. |
+| **HydroSmart** | Marca / Identidad | Nombre distintivo que combina "Agua" e "Inteligencia". Actúa como el ancla identitaria del ecosistema. |
+
+El sistema de etiquetado en la Landing Page de **HydroSmart** refleja una aplicación rigurosa de principios de usabilidad y arquitectura de información. Las etiquetas emplean un lenguaje que equilibra la precisión técnica (como "IA Predictiva" o "Detección Precisa") con términos orientados al negocio y al usuario final (como "Cero Desperdicio").
+
+Existe una coherencia semántica integral: los términos utilizados en el menú superior se replican fielmente en los encabezados de las secciones, lo que garantiza que el usuario siempre sepa dónde se encuentra. El uso de imperativos en los botones de acción y sustantivos descriptivos en las tarjetas de beneficios refuerza la accesibilidad cognitiva, permitiendo que tanto profesionales del sector hídrico como administradores de hogares puedan interactuar con la plataforma sin fricciones, asegurando la claridad y consistencia de la experiencia web.
+
+### 4.2.3. SEO Tags and Meta Tags
+
+Los meta tags y etiquetas SEO son elementos esenciales dentro de la arquitectura de cualquier página web, ya que permiten definir cómo es interpretado, indexado y presentado el contenido de un sitio por parte de los motores de búsqueda y las redes sociales. Aunque estos componentes operan en el código subyacente, desempeñan un papel determinante en el posicionamiento orgánico y en la coherencia visual de los enlaces compartidos.
+
+En el desarrollo de la Landing Page de HydroSmart, se han implementado etiquetas específicas diseñadas para maximizar la relevancia del sitio. A través de descripciones precisas, el sitio comunica su identidad como una herramienta para el control hídrico. Además, se han integrado palabras clave estratégicas como IoT, eficiencia hídrica y gestión inteligente, reforzando la autoridad del dominio
+
+- **Charset:** Define la codificación de caracteres del documento para asegurar la correcta interpretación del contenido.
+
+<div>
+<img src="images/charseths.PNG" width="150" height="15">
+</div> 
+<br>
+
+- **Viewport:** Controla cómo se muestra la página en dispositivos móviles, garantizando uan experiencia accesible y responsiva.
+
+<div>
+<img src="images/viewporths.PNG" width="400" height="15">
+</div> 
+<br>
+
+- **Título:** El título actual de la página consolida la identidad digital del proyecto.
+
+<div>
+<img src="images/titulohs.PNG" width="150" height="15">
+</div> 
+<br>
+
+- **Meta Description:** Resume la propuesta de valor orientada a la optimización de recursos y detección de fugas.
+- **Keywords:** Incluye términos estratégicos que refuerzan la visibilidad en búsquedas relacionadas con tecnología hídrica.
+- **Open Graph:** Asegura una visualización atractiva y profesional al compartir el sitio en redes sociales. 
+### 4.2.4. Searching Systems
+
+Al ingresar a HydroSmart, el usuario encontrará su información de consumo organizada de forma clara y accesible, reduciendo la necesidad de búsquedas complejas.
+
+Para los casos en que el usuario requiera consultar datos específicos, la aplicación contará con opciones de filtrado dentro de la sección de historial, permitiendo seleccionar el período de tiempo deseado entre vistas diarias, semanales y mensuales.
+
+En el caso de los arrendadores, se añade la posibilidad de filtrar por unidad de inmueble, facilitando la identificación del consumo individual de cada inquilino.
+
+Los resultados se presentan mediante gráficos y tablas ordenadas cronológicamente, permitiendo al usuario reconocer patrones de consumo o detectar anomalías con facilidad.
+
+El sistema está diseñado para que la información relevante esté siempre al alcance del usuario sin necesidad de realizar búsquedas extensas, priorizando una experiencia fluida y directa que se adapta tanto a propietarios como a inquilinos según su perfil.
+
+### 4.2.5. Navigation Systems
+La navegación es un elemento fundamental HydroSmart porque estructura el recorrido del usuario y facilita el acceso a la información clave sobre la plataforma. Bajo principios de simplicidad, accesibilidad y jerarquía visual, el sistema de navegación ha sido diseñado para garantizar una experiencia clara e intuitiva tanto en dispositivos de escritorio como en móviles.
+HydroSmart implementa un sistema de navegación global, persistente y horizontal, ubicado en la parte superior de la página. Este está compuesto por los siguientes elementos principales:
+
+- Inicio: vinculado al logotipo de HydroSmart, permite regresar a la sección principal desde cualquier punto de la página.
+- Beneficios: apartado que resalta las ventajas concretas de usar HydroSmart para cada segmento objetivo.
+- Características: detalle de las funcionalidades principales de la plataforma.
+- Planes: presenta las opciones de suscripción disponibles: Básico, Pro y Smart.
+- Nosotros: ofrece información sobre la misión, visión y equipo detrás de HydroSmart.
+- FAQ: sección de preguntas frecuentes que resuelve las dudas más comunes de los visitantes.
+- Empezar Ahora (CTA): botón destacado que impulsa la conversión, visualmente diferenciado del resto de enlaces, redirigiendo al usuario al registro de la aplicación.
+
+El diseño del header utiliza un fondo uniforme con elementos de alto contraste, siguiendo un estilo minimalista que evita distracciones y centra la atención en las decisiones de navegación. La organización de los enlaces sigue una estructura en tres zonas: el logotipo alineado a la izquierda, las secciones principales al centro y el botón de acción alineado a la derecha.
+En cuanto a adaptabilidad, la barra de navegación está construida bajo un enfoque mobile-first, ajustándose dinámicamente a distintas resoluciones. En pantallas pequeñas, el menú horizontal se convierte en un menú tipo hamburguesa, asegurando que todas las secciones permanezcan accesibles sin comprometer la usabilidad.
+Finalmente, la navegación en HydroSmart cumple con los siguientes principios de usabilidad:
+
+- Claridad: los enlaces son directos y fácilmente identificables.
+- Consistencia: la barra se mantiene visible y uniforme en todo momento.
+- Jerarquía: las secciones más relevantes están ubicadas estratégicamente en el centro de la navegación.
+- Retroalimentación visual: se incluyen estados hover y focus que refuerzan la interacción del usuario.
+
