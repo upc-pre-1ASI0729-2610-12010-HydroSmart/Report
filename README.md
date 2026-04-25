@@ -544,3 +544,67 @@ Este diagrama muestra cómo la aplicación se encuentra estructurada a partir de
 [![diagram.png](https://i.postimg.cc/yYMYCRgT/diagram.png)](https://postimg.cc/HVtCQVtJ)
 
 
+## 4.7. Software Object-Oriented Design.
+
+### 4.7.1. Class Diagrams.
+<p>En esta sección se presentan los diagramas de clases que representan la estructura del sistema, incluyendo las entidades principales, sus atributos y métodos, así como las relaciones entre ellas. Estos diagramas son fundamentales para comprender cómo se modelan los datos y las interacciones dentro de la aplicación.</p>
+
+<img src="./images/diagrama_de_clase.png">
+
+### **4.7.2. Class Dictionary**
+
+A continuación se detallan las clases, enumeraciones y estructuras que conforman el núcleo lógico de **HydroSmart**, organizadas por sus respectivos contextos delimitados (Bounded Contexts).
+
+#### **Identity and Access Management**
+
+| Clase/Enum | Descripción | Atributos | Métodos |
+|-------------|--------------|------------|-----------|
+| **User** | Clase base para la autenticación y gestión de usuarios en el sistema. | - **id**: Guid (PK)<br>- **email**: String<br>- **passwordHash**: String<br>- **role**: UserType<br>- **createdAt**: DateTime<br>- **isActive**: boolean | - **login**(): Inicia sesión<br>- **logout**(): Finaliza sesión<br>- **updateCredentials**(): Actualiza claves |
+| **Profile** | Almacena la información personal y de contacto del usuario. | - **id**: Guid<br>- **firstName**: String<br>- **lastName**: String<br>- **phoneNumber**: String<br>- **address**: String | - **updateContactInfo**(): Actualiza datos personales |
+| **UserType** | Define los roles de acceso disponibles. | - **OWNER**: Propietario<br>- **TENANT**: Inquilino/Estudiante<br>- **ADMIN**: Administrador | — |
+| **PropertyOwner** | Especialización para usuarios que gestionan propiedades (Santiago). | - **propertyTitle**: String<br>- **managedDevices**: List\<IoTDevice\> | - **registerProperty**(): Vincula una nueva propiedad |
+| **StudentTenant** | Especialización para usuarios con consumo compartido (Arianna). | - **roommateGroupId**: Guid<br>- **contractEndDate**: DateTime | - **getSharedConsumption**(): Calcula gasto entre roommates |
+
+---
+
+#### **Consumption and IoT Management**
+
+| Clase/Enum | Descripción | Atributos | Métodos |
+|-------------|--------------|------------|-----------|
+| **IoTDevice** | Representa el hardware de monitoreo vinculado al medidor de agua. | - **deviceId**: Guid<br>- **serialNumber**: String<br>- **status**: DeviceStatus<br>- **lastSync**: DateTime<br>- **firmwareVersion**: String | - **getLatestRecord**(): Obtiene última lectura<br>- **toggleStatus**(): Cambia estado operativo |
+| **ConsumptionRecord** | Registro individual de telemetría hídrica. | - **id**: long (PK)<br>- **volumeLiters**: double<br>- **instantFlowRate**: double<br>- **timestamp**: DateTime<br>- **calculatedCost**: double | - **toSoles**(): Conversión de volumen a moneda PEN |
+| **DeviceStatus** | Estados posibles del sensor IoT. | - **ACTIVE**<br>- **INACTIVE**<br>- **MAINTENANCE**<br>- **LEAK_SUSPECTED** | — |
+
+---
+
+#### **Anomaly Detection and Notifications**
+
+| Clase/Enum | Descripción | Atributos | Métodos |
+|-------------|--------------|------------|-----------|
+| **AnomalyDetector** | Módulo encargado de procesar patrones de consumo inusuales. | - **sensitivityThreshold**: double | - **analyzePattern**(): Compara flujos históricos<br>- **identifyLeak**(): Detecta fugas continuas |
+| **Alert** | Mensaje crítico generado ante eventos de riesgo o límites. | - **id**: Guid<br>- **title**: String<br>- **message**: String<br>- **severity**: AlertSeverity<br>- **isRead**: boolean | - **markAsRead**(): Cambia estado a leído<br>- **notifyUser**(): Dispara notificación Push/Email |
+| **AlertSeverity** | Niveles de criticidad de una alerta. | - **INFO**<br>- **WARNING**<br>- **CRITICAL** | — |
+
+---
+
+#### **Saving Goals and Recommendations**
+
+| Clase/Enum | Descripción | Atributos | Métodos |
+|-------------|--------------|------------|-----------|
+| **SavingGoal** | Planificación de ahorro definida por el usuario. | - **id**: Guid<br>- **targetVolume**: double<br>- **targetCost**: double<br>- **startDate**: DateTime<br>- **endDate**: DateTime<br>- **currentProgress**: double | - **isGoalReached**(): Valida cumplimiento<br>- **calculateProjectedSavings**(): Proyecta ahorro |
+| **Recommendation** | Sugerencias generadas automáticamente para optimizar el consumo. | - **id**: int<br>- **description**: String<br>- **category**: String<br>- **isApplied**: boolean | - **applyTip**(): Registra aplicación del consejo |
+
+---
+
+#### **Business Logic and Financials**
+
+| Clase/Enum | Descripción | Atributos | Métodos |
+|-------------|--------------|------------|-----------|
+| **CostCalculator** | Entidad de servicio que aplica el tarifario vigente de Sedapal. | - **pricePerCubicMeter**: double<br>- **fixedCharge**: double<br>- **taxRate**: double | - **calculate**(liters): Devuelve costo total en soles |
+
+## 4.8. Database Design.
+### 4.8.1. Database Diagrams.
+
+<img src="./images/database_diagram.jpeg">
+
+<div style="page-break-after: always;"></div>
