@@ -333,53 +333,17 @@ El despliegue del Business Website se realizó utilizando GitHub Pages, aprovech
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint.
 
-Durante el Sprint 1, nuestra colaboración se centró principalmente en la realización del documento y funcionalidad básica de la landing page. El equipo utilizó GitHub Projects para la gestión de tareas, asegurando que cada sección (Hero, About, Pricing) fuera desarrollada correctamente y a tiempo.
+Durante el Sprint 1, nuestra colaboración se centró principalmente en la realización del documento y funcionalidad básica de la landing page. El equipo utilizó GitHub Projects para la gestión de tareas, asegurando que cada sección (Hero, About, Pricing) fuera desarrollada correctamente y a tiempo. 
 
-### Gráfico de Contribuciones del equipo
+**Aspectos positivos:**
+- Trabajo conjunto en el desarrollo frontend
+- Organización para completar la documentación requerida
+- Uso de GitHub para control de versiones
 
-### Contribuciones al desarrollo de la Landing Page:
-
-<div align="center">
-    <img src="images/landing-page-commits1.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/landing-page-commits2.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/landing-page-commits3.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/landing-page-commits4.PNG" alt="login Wireframe" width="500">
-</div>
-
-### Contribuciones al desarrollo del Documento:
-
-<div align="center">
-    <img src="images/report-commits1.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/report-commits2.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/report-commits3.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/report-commits4.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/report-commits5.PNG" alt="login Wireframe" width="500">
-</div>
-
-<div align="center">
-    <img src="images/report-commits6.PNG" alt="login Wireframe" width="500">
-</div>
+**Aspectos a mejorar:**
+- Mejor distribución de tareas
+- Mayor planificación del tiempo
+- Incrementar la frecuencia de commits
 
 
 # Conclusiones y Recomendaciones
