@@ -83,7 +83,7 @@ Este objetivo representa una etapa clave para validar la propuesta de valor del 
 Asimismo, este objetivo se relaciona directamente con los comportamientos de los segmentos identificados, quienes, mediante el uso constante de la aplicación para monitorear su consumo de agua y mejorar sus hábitos, contribuyen al posicionamiento de la solución. De esta manera, se busca evidenciar que la aplicación no solo es funcional, sino que también aporta valor real en la optimización del consumo, incentivando su uso continuo y su recomendación dentro de su entorno cercano.
 
 <div align="center">
-  <img src="images/Impact_Mapping_HydroSmartBG1.png" alt="Impact-Mapping-BG1" width="600">
+  <img src="images/impact mappings/Impact_Mapping_HydroSmartBG1.png" alt="Impact-Mapping-BG1" width="600">
 </div>
 
 **Business Goal 2: Optimizar el 70 % del monitoreo del consumo de agua en 6 meses y aumentar la retención de usuarios en un 25 % en 9 meses**
@@ -95,7 +95,7 @@ Por otro lado, el incremento en la retención de usuarios responde a la necesida
 En este sentido, las funcionalidades asociadas, como la automatización de alertas, el seguimiento del consumo y la personalización de la experiencia, cumplen un rol clave en la fidelización de los usuarios. Así, este Business Goal no solo busca mejorar el desempeño técnico del producto, sino también consolidar su relevancia en la vida cotidiana de los usuarios, garantizando su uso sostenido y su crecimiento a largo plazo.
 
 <div align="center">
-  <img src="images/Impact_Mapping_HydroSmartBG2.png" alt="Impact-Mapping-BG2" width="600">
+  <img src="images/impact mappings/Impact_Mapping_HydroSmartBG2.png" alt="Impact-Mapping-BG2" width="600">
 </div>
 
 
