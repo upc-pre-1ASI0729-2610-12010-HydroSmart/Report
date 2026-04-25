@@ -291,6 +291,9 @@ Durante el Sprint 1 se desarrolló la Landing Page basada en los diseños defini
 - Estilos CSS para el diseño visual
 - Componentes básicos de la interfaz
 - Capturas de código
+
+<img src="images/HTML.PNG" alt="HTML" width="800">
+<img src="images/CSS.PNG" alt="CSS" width="800">
 ---
 
 ### 5.2.1.5. Execution Evidence for Sprint Review.
