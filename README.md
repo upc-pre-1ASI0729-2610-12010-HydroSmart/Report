@@ -289,9 +289,8 @@ RESUMEN
 **Entrevista 3:**
 
 <p align="center">
-  <img src="./images/Entrevista5.png" alt="entrevista1" width="400">
+  <img src="./images/Entrevista6.png" alt="entrevista1" width="700">
 </p>
-RESUMEN
 
 
 RESUMEN
@@ -299,7 +298,7 @@ RESUMEN
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Entrevistador**    |    Oscar Vara                                                  |
-| **Entrevistado**     |                                  |
+| **Entrevistada**     |    Elvira                              |
 | **Edad**             |     23                                         |
 | **Inicio entrevista**|    0:00                                               |
 | **Duración**         |    06:36                                               |
