@@ -214,6 +214,7 @@ En esta sección se define la información a recolectar de los segmentos objetiv
 
 RESUMEN
 
+Fátima Gómez, analista de marketing, busca mayor control sobre el consumo de agua en su hogar debido a su actual dependencia del recibo mensual, lo que le impide detectar fugas o excesos a tiempo. Para solucionar esto, desea una aplicación móvil que ofrezca historiales comparativos y alertas en tiempo real para gestionar el gasto familiar de forma proactiva. Aunque le preocupa la privacidad de sus datos de ocupación, está dispuesta a pagar una suscripción siempre y cuando la herramienta le genere un ahorro mensual que supere el costo del servicio.
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Entrevistador**    | Braden Garcia                                                     |
@@ -259,6 +260,8 @@ RESUMEN
 
 RESUMEN
 
+Alexandra Zavala, una estudiante de 19 años que alquila un departamento, busca reducir su consumo de agua por motivos económicos y ambientales, especialmente tras haber enfrentado cobros elevados debido a fugas. Para evitar gastos innecesarios, le interesaría utilizar una aplicación móvil sencilla y sin anuncios invasivos que le ofrezca gráficos de su historial (diario, semanal y mensual) junto con alertas de exceso en tiempo real. Se muestra dispuesta a cambiar sus hábitos diarios y consideraría pagar una suscripción por esta herramienta, siempre y cuando el precio sea accesible y le ayude efectivamente a regular su consumo.
+
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Entrevistador**    | Victor Espino                                                     |
@@ -295,6 +298,8 @@ RESUMEN
 
 RESUMEN
 
+Elvira, una estudiante de 23 años que vive sola, mantiene un consumo de agua responsable y estable. Aunque actualmente no siente la necesidad de cambiar sus hábitos, afirma que utilizaría una aplicación para monitorear su gasto hídrico en tiempo real, motivada principalmente por la conciencia ambiental antes que por el ahorro económico. Estaría interesada en conocer también su huella hídrica indirecta y consideraría pagar una suscripción si la herramienta demuestra un valor real para ayudarla a reducir su impacto ecológico.
+
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Entrevistador**    |    Oscar Vara                                                  |
@@ -305,6 +310,12 @@ RESUMEN
 | **Enlace**           | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411622_upc_edu_pe/IQClOMXTv562R7N2LHbRebP2AcrMhdqXm0VdzajUEJujgKI?e=i8AkwG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ### 2.2.3. Análisis de entrevistas
+
+
+| Segmento | Características                                                                                                                                                                                                                                  | Objetivos comunes | Características subjetivas comunes |
+|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-----------------------------------|
+| Segmento #1: Propietarios de viviendas con áreas verdes | Sexo: Mixto<br>Edad: 30-60 años<br>Dispositivos: Smartphone, laptop, dispositivos inteligentes<br>Programas: Redes sociales profesional. <br>Canales de información: Plataformas digitales y apps<br>Canales de uso: Gestión del hogar y consumo | Controlar el consumo de agua<br><br>Optimizar el riego de áreas verdes<br><br>Prevenir fugas y desperdicios<br><br>Reducir costos de servicios<br><br>Implementar tecnología en el hogar<br><br>Mejorar eficiencia de recursos | Motivación: Tener control del consumo y evitar gastos innecesarios.<br><br>Frustración: No detectar fugas a tiempo y falta de información clara. |
+| Segmento #2: Estudiantes que alquilan | Sexo: Mixto<br>Edad: 18-28 años<br>Dispositivos: Smartphone, laptop<br>Programas: Apps móviles y redes sociales<br>Canales de información: Redes sociales y entorno digital<br>Canales de uso: Organización de gastos y convivencia              | Reducir gastos del hogar<br><br>Tener control del consumo de agua<br><br>Evitar conflictos entre roommates<br><br>Adoptar hábitos de ahorro<br><br>Usar soluciones simples<br><br>Mantener comodidad | Motivación: Ahorrar dinero y mejorar la convivencia.<br><br>Frustración: No saber en qué se gasta el agua y falta de control. |
 
 ## 2.3. Needfinding
 
