@@ -272,29 +272,38 @@ RESUMEN
 
 **Entrevista 2:**
 
+<p align="center">
+  <img src="./images/Entrevista5.png" alt="entrevista1" width="400">
+</p>
 RESUMEN
 
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
-| **Entrevistador**    |                                                      |
-| **Entrevistado**     |                                  |
-| **Edad**             |                                              |
-| **Inicio entrevista**|                                                   |
-| **Duración**         |                                                   |
-| **Enlace**           | 
+| **Entrevistador**    | Keyner Hancco                                                     |
+| **Entrevistado**     |  Stephano Espinoza                                |
+| **Edad**             |  21                                            |
+| **Inicio entrevista**|  0:00                                                 |
+| **Duración**         |   09:47                                                |
+| **Enlace**           | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c726_upc_edu_pe/IQCV9VJV8AVoTpuKwD4uFo4fASp7kxdyQFDHsLbIHLqPJBY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3Fwdu9
 
 **Entrevista 3:**
 
+<p align="center">
+  <img src="./images/Entrevista5.png" alt="entrevista1" width="400">
+</p>
+RESUMEN
+
+
 RESUMEN
 
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
-| **Entrevistador**    |                                                      |
+| **Entrevistador**    |    Oscar Vara                                                  |
 | **Entrevistado**     |                                  |
-| **Edad**             |                                              |
-| **Inicio entrevista**|                                                   |
-| **Duración**         |                                                   |
-| **Enlace**           | 
+| **Edad**             |     23                                         |
+| **Inicio entrevista**|    0:00                                               |
+| **Duración**         |    06:36                                               |
+| **Enlace**           | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411622_upc_edu_pe/IQClOMXTv562R7N2LHbRebP2AcrMhdqXm0VdzajUEJujgKI?e=i8AkwG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ### 2.2.3. Análisis de entrevistas
 
