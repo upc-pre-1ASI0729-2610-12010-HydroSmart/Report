@@ -208,16 +208,20 @@ En esta sección se define la información a recolectar de los segmentos objetiv
 **Entrevista 1:**
 
 
+<p align="center">
+  <img src="./images/Entrevista1.png" alt="entrevista1" width="400">
+</p>
+
 RESUMEN
 
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
-| **Entrevistador**    |                                                      |
-| **Entrevistado**     |                                  |
-| **Edad**             |                                              |
-| **Inicio entrevista**|                                                   |
-| **Duración**         |                                                   |
-| **Enlace**           | 
+| **Entrevistador**    | Braden Garcia                                                     |
+| **Entrevistado**     | Fátima Gómez                                  |
+| **Edad**             | 19                                                    |
+| **Inicio entrevista**| 0:00                                                    |
+| **Duración**         | 03:43                                                   |
+| **Enlace**           | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415618_upc_edu_pe/IQDWdCwR_8ONQb8iIb144XwMAVWZFxfej5rM2dNfA9EtmTs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=406t1m|  
 
 **Entrevista 2:**
 
@@ -249,17 +253,21 @@ RESUMEN
 **Entrevistas Segmento 2: Estudiantes que alquilan**
 
 **Entrevista 1:**
+<p align="center">
+  <img src="./images/Entrevista4.png" alt="entrevista1" width="400">
+</p>
 
 RESUMEN
 
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
-| **Entrevistador**    |                                     |
-| **Entrevistado**     |                              |
-| **Edad**             |                                                 |
-| **Inicio entrevista**| |
-| **Duración**         |                                       |
-| **Enlace**           | 
+| **Entrevistador**    | Victor Espino                                                     |
+| **Entrevistado**     | Alexandra Zavala                                  |
+| **Edad**             | 19                                                    |
+| **Inicio entrevista**| 00:00:00                                                      |
+| **Duración**         | 03:58                                                   |
+| **Enlace**           | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411567_upc_edu_pe/IQC-lfDnAXNYQayQ13s-IvOOAbHzHw5F41nXe-Z8NDOrLPo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Q6BKSl|  
+
 
 
 **Entrevista 2:**
@@ -305,11 +313,15 @@ Anexo Diagrama User Persona: https://drive.google.com/drive/folders/1g8x4MvTkakZ
 **Segmento 1: Propietarios de viviendas con áreas verdes**
 
 <p align="center">
-  <img src="./images/" alt="entrevista1" width="400">
+  <img src="./images/Santiago Vela.png" alt="entrevista1" width="400">
 </p>
 
 
 **Segmento 2: Estudiantes que alquilan**
+
+<p align="center">
+  <img src="./images/Arianna Floress.png" alt="entrevista1" width="400">
+</p>
 
 
 
@@ -358,7 +370,7 @@ Para el desarrollo del Big Picture EventStorming de HydroSmart, se utilizó una 
 
 Para ello se definió una leyenda:
 
-[![image.png](https://i.postimg.cc/Dy8b1KTM/image.png)](https://postimg.cc/3dQRHVWX)
+<img src="images/image.png" alt="Empathy_mapping_2.png" width="500">
 
 - **Domain Events:** Representa hechos del sistema ya ocurridos.
 - **Hotspot:** Punto de duda o mejora dentro del flujo.
@@ -372,25 +384,25 @@ Para ello se definió una leyenda:
 
 Para el desarrollo del primer EventStorming se identificaron los domain events relacionados con el registro y acceso del usuario a la plataforma, como la validación correcta de los datos, la creación del usuario y el inicio de sesión. Primero se reconocen los pasos que ejecuta el actor principal (propietario o inquilino), como registrarse en la aplicación, ingresar sus datos personales y autenticar sus credenciales para acceder al sistema. También se muestran las validaciones realizadas por HydroSmart. Finalmente, se plantean preguntas para mejorar el flujo, como qué datos mínimos solicitar al usuario y cómo validar correctamente la información. 
 
-[![Aplicaciones-Web-Big-Picture-Event-Storming-1.jpg](https://i.postimg.cc/TPJ3btNZ/Aplicaciones-Web-Big-Picture-Event-Storming-1.jpg)](https://postimg.cc/bGdPc9hT)
+<img src="images/Open-Source-Big-Picture-Event-Storming-1.jpg" alt="Empathy_mapping_2.png" width="700">
 
 **Big Picture EventStorming 2:**
 
 Para el desarrollo de este segundo EventStorming se identificaron los domain events relacionados con el monitoreo y visualización del consumo de agua, además de la generación de reportes y configuración de parámetros. Al igual que en el anterior se reconocen los pasos que ejecuta el actor principal para acceder al panel y a estos reportes. También se muestran las acciones de Hydrosmart como el procesamiento de información. Finalmente se plantean preguntas para mejorar el flujo, como qué métricas mostrar en pantalla.
 
-[![Aplicaciones-Web-Big-Picture-Event-Storming-2.jpg](https://i.postimg.cc/L6MYJQTP/Aplicaciones-Web-Big-Picture-Event-Storming-2.jpg)](https://postimg.cc/Z0VKgcXY)
+<img src="images/Open-Source-Big-Picture-Event-Storming-2.jpg" alt="Empathy_mapping_2.png" width="700">
 
 **Big Picture EventStorming 3:**
 
 Este tercer EventStorming se trató la detección de anomalías y generación de alertas. Se reconocieron los domain events relacionados junto con la presentación de sugerencias. Se reconocen los pasos que sigue el sistema, como analizar los patrones de consumo, comparar el comportamiento actual con umbrales definidos y la generación de notificaciones. Finalmente, se plantean hotspots acerca de cómo definir con precisión una falla o cada cuánto se realizan los análisis. 
 
-[![Aplicaciones-Web-Big-Picture-Event-Storming-3.jpg](https://i.postimg.cc/CM4Y4v0s/Aplicaciones-Web-Big-Picture-Event-Storming-3.jpg)](https://postimg.cc/QVVR8JHF)
+<img src="images/Open-Source-Big-Picture-Event-Storming-3.jpg" alt="Empathy_mapping_2.png" width="700">
 
 **Big Picture EventStorming 4:**
 
 Para el desarrollo del cuarto EventStorming se identificaron los eventos de dominio relacionados con el historial de consumo, la configuración de metas de ahorro y la generación de recomendaciones automáticas. Se reconocieron las acciones del usuario como actor principal como acceder a la sección, revisar el consumo y definir una meta. En cuanto a las acciones del sistema se consideró, el análisis de datos previos, el cálculo del progreso de ahorro y las sugerencias personalizadas. Finalmente, se plantean preguntas para mejorar el flujo, como cómo definir metas realistas y cómo mostrar el avance de forma clara.
 
-[![Aplicaciones-Web-Big-Picture-Event-Storming-4.jpg](https://i.postimg.cc/59rgDJfy/Aplicaciones-Web-Big-Picture-Event-Storming-4.jpg)](https://postimg.cc/Dmq1btJ3)
+<img src="images/Open-Source-Big-Picture-Event-Storming-4.jpg" alt="Empathy_mapping_2.png" width="700">
 
 
 **Conclusión**
