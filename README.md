@@ -29,7 +29,7 @@ Consolidarse como la plataforma de referencia en eficiencia hídrica residencial
 | <img src="images/members/keyner.jpeg" width="100"> <br> Keyner Ivan Hancco Poma           | U20221C726        | Ingeniería de Software | C++, Python, CSS, HTML, Figma, SQL, JS, Excelente en comunicación, organización y en el idioma inglés  |
 | <img src="images/members/hernan.jpeg" width="100"> <br> Hernan Gabriel Huayta Fuentes | UXXXXXXXX       | Ingeniería de Software |  |
 | <img src="images/members/victor.jpeg" width="100"> <br> Victor Manuel Espino Rossi        | UXXXXXXXX        | Ingeniería de Software |                                  |
-| <img src="images/members/oscar.png" width="105"> Oscar Fernando Vara Velásquez             | UXXXXXXXX        | Ingeniería de Software |                    |
+| <img src="images/members/Vara.jpeg" width="105"> Oscar Fernando Vara Velásquez             | U202411622        | Ingeniería de Software |  Enfocado en crear soluciones tecnológicas de acuerdo a las necesidades de los usuarios. Cuento una rápida adquisición de conocimientos y trabajo en equipo                  |
 
 
 ## 1.2. Solution Profile
