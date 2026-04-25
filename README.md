@@ -470,3 +470,77 @@ A continuación, se presenta el video con los prototipos navegables: https://upc
 
 
 
+## 4.6. Domain-Driven Software Architecture
+### 4.6.1. Design-Level EventStorming
+
+Para el Design Level Event Storming se tomó como base el trabajo realizado en el Big Picture Event Storming. Sin embargo, se incorporaron nuevos elementos y detalles adicionales, los cuales se explican en la siguiente leyenda.  
+[![image.png](https://i.postimg.cc/0Q1n1zkh/image.png)](https://postimg.cc/5HpLwNFm)
+
+Como se puede observar en la leyenda, se agregó un nuevo elemento, que son los aggregates. Además, también se adicionaron, como se verá más adelante, los bounded contexts.
+
+**Aggregates:** Es un conjunto de elementos del dominio que se agrupan y se manejan como una sola unidad.
+
+**Bounded Context:** Es una parte del sistema donde un grupo de conceptos y reglas se entiende de una sola manera.
+
+**User Management**  
+[![Aplicaciones-Web-Design-Level-Event-Storming-1.jpg](https://i.postimg.cc/7Pnkc7HT/Aplicaciones-Web-Design-Level-Event-Storming-1.jpg)](https://postimg.cc/pyr45mn2)
+
+Este representa el flujo inicial de registro y acceso del usuario dentro de HydroSmart. En este se modelan las acciones relacionadas con el ingreso de datos, la validación de información, la creación de la cuenta y el inicio de sesión.
+
+Dentro de este bounded context se identifican dos aggregates principales: User Account y User Session. El aggregate User Account concentra la información y el estado de la cuenta del usuario, permitiendo representar procesos como la creación de cuenta y la validación de datos. Por otro lado, el aggregate User Session se relaciona con la autenticación y el acceso al sistema, permitiendo modelar el inicio de sesión y la sesión iniciada como parte del flujo.
+
+**Consumption Analytics / Reporting and Consumption Monitoring**  
+[![Aplicaciones-Web-Big-Picture-Event-Storming-2-(2).jpg](https://i.postimg.cc/BZmFxmL0/Aplicaciones-Web-Big-Picture-Event-Storming-2-(2).jpg)](https://postimg.cc/DmbmhdPj)
+
+En este se puede observar el flujo mediante el cual el usuario visualiza su consumo de agua, consulta reportes y configura parámetros asociados a los puntos de monitoreo.
+
+En este diseño se identifican dos bounded contexts principales. El primero es Consumption Analytics / Reporting, encargado del procesamiento de datos y la generación de reportes de consumo. Dentro de este contexto se reconocen los aggregates relacionados con la información procesada y la elaboración de reportes, los cuales permiten transformar los datos capturados en información útil para el usuario. El segundo es Consumption Monitoring, enfocado en la supervisión de los puntos de consumo, donde se ubica el aggregate IoT Device Configuration, asociado a la visualización y ajuste de parámetros de monitoreo.
+
+**Anomaly Detection y Notification**  
+[![Aplicaciones-Web-Design-Level-Event-Storming-3.jpg](https://i.postimg.cc/T11JrFTP/Aplicaciones-Web-Design-Level-Event-Storming-3.jpg)](https://postimg.cc/5QczJPYc)
+
+El diagrama representa el flujo de análisis del consumo de agua, la detección de anomalías y la generación de notificaciones para el usuario.
+
+En este diseño se identifican dos bounded contexts principales. El primero es Anomaly Detection, encargado de analizar la información de consumo y detectar posibles fugas o comportamientos inusuales. Dentro de este contexto se reconocen los aggregates Consumption Analysis y Consumption Leak Alert, los cuales permiten representar tanto el análisis del consumo como la alerta generada ante una posible fuga. El segundo bounded context es Notification, responsable de comunicar al usuario los resultados del análisis mediante mensajes y sugerencias, dentro del cual se identifica el aggregate Suggestion.
+
+**Saving Goals**  
+[![Aplicaciones-Web-Design-Level-Event-Storming-4.jpg](https://i.postimg.cc/P5VyqtHz/Aplicaciones-Web-Design-Level-Event-Storming-4.jpg)](https://postimg.cc/bZbkCfss)
+
+Este flujo está relacionado con la definición de metas de ahorro y la generación de recomendaciones para el usuario dentro de HydroSmart. El usuario registra su meta, el sistema la toma y analiza la información disponible para calcular el progreso y presentar recomendaciones que ayuden al usuario a cumplir el objetivo.
+
+En este diseño se identifica el bounded context Saving Goals, encargado de gestionar la lógica asociada al ahorro de agua dentro de la plataforma. Dentro de este contexto se reconocen dos aggregates principales: Saving Goal, que representa la meta de ahorro establecida por el usuario, y Recommendation, que agrupa las sugerencias generadas por el sistema en función del comportamiento histórico del consumo.
+
+### 4.6.2. Software Architecture Context Diagram
+
+El diagrama de contexto muestra de manera general de qué trata nuestro proyecto y sus principales relaciones. En este destacan los actores principales y cómo se relacionan con la plataforma, siendo estos los propietarios y aquellos que alquilan.
+
+Asimismo, también destacan las tecnologías externas con las que se relaciona, tanto para el pago, el envío de notificaciones y la recepción de datos de los sensores IoT.
+
+[![Context-Diagram.png](https://i.postimg.cc/mDPMPRdx/Context-Diagram.png)](https://postimg.cc/WFPtKRLS)
+
+### 4.6.3. Software Architecture Container Diagrams
+
+El diagrama de contenedores profundiza en la estructura interna del sistema y muestra cómo está organizado. HydroSmart está compuesto principalmente por tres contenedores: Landing Page, Web App y API Backend.
+
+La Landing Page funciona como el punto de entrada para ambos usuarios, donde se muestra por qué escoger HydroSmart. Después, los usuarios acceden a la aplicación web, que a su vez se conecta con un API Backend central, encargado de mostrar todas las funcionalidades de HydroSmart.
+
+[![container.png](https://i.postimg.cc/vmvTGm5M/container.png)](https://postimg.cc/DW8ngnCY)
+
+### 4.6.4. Software Architecture Components Diagrams
+
+El diagrama de componentes muestra la estructura interna del Web Service de HydroSmart, destacando cómo sus capacidades principales se organizan en bounded contexts.
+
+Dentro de la aplicación, el dominio está dividido en los siguientes componentes:
+
+- **User Management:** Gestiona el registro de usuarios, la validación de datos, la creación de cuenta y el inicio de sesión.
+- **Consumption Analytics / Reporting:** Se encarga del procesamiento de los datos de consumo de agua y de la generación de reportes.
+- **Consumption Monitoring:** Administra el monitoreo del consumo de agua en tiempo real y la configuración de los puntos de consumo asociados.
+- **Anomaly Detection:** Analiza los patrones de consumo y detecta comportamientos inusuales, como consumos anómalos o posibles fugas de agua.
+- **Notification:** Gestiona la comunicación de alertas, sugerencias y mensajes relevantes para el usuario.
+- **Saving Goals:** Administra la definición de metas de ahorro, el seguimiento del progreso y la generación de recomendaciones.
+
+Este diagrama muestra cómo la aplicación se encuentra estructurada a partir de los bounded contexts y cómo se conectan tanto con servicios externos como con la base de datos del sistema.
+
+[![diagram.png](https://i.postimg.cc/yYMYCRgT/diagram.png)](https://postimg.cc/HVtCQVtJ)
+
+
