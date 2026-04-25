@@ -284,23 +284,13 @@ El objetivo principal fue entregar una solución mínima viable que permita a lo
 
 ### 5.2.1.4. Development Evidence for Sprint Review
 
-| Repository               | Branch    | Commit id | Commit message                                           | Commited on (Date) |
-|--------------------------|-----------|-----------|----------------------------------------------------------|--------------------|
-| HydroSmart-Landing-Page  | develop   | cd5fbec   | feat(home): add header and initial section html.         | 19/04/2026         |
-| HydroSmart-Landing-Page  | develop   | d1173e4   | feat(home): add header and initial section css.          | 19/04/2026         |
-| HydroSmart-Landing-Page  | develop   | 853ccfa   | feat(home): add i18n.feat(home): add i18n.               | 19/04/2026         |
-| HydroSmart-Landing-Page  | develop   | 86776fa   | feat(benefits): add benefits section html.               | 19/04/2026         |
-| HydroSmart-Landing-Page  | develop   | 9662781   | feat(benefits): add benefits section css.                | 19/04/2026         |
-| HydroSmart-Landing-Page  | develop   | 99a1ed3   | feat(suscription): add suscription plans                 | 20/04/2026         |
-| HydroSmart-Landing-Page  | develop   | b9722ab   | feat(suscription): clean up suscription css              | 20/04/2026         |
-| HydroSmart-Landing-Page  | develop   | a54e72c   | feat(subscription): add responsive styles to suscription | 20/04/2026         |
-| HydroSmart-Landing-Page  | develop   | fe0ad44   | feat(suscription): updated stylesSuscription             | 20/04/2026         |
-| HydroSmart-Landing-Page  | develop   | 71c0a11   | feat(nosotros):  add team section with i18n support      | 21/04/2026         |
-| HydroSmart-Landing-Page  | develop   | 3ef7cb9   |  feat(nosotros): add photos and description              | 22/04/2026         |
-| HydroSmart-Landing-Page  | develop   | d0d5230   | feat(Features): Add Information.              | 24/04/2026         |
-| HydroSmart-Landing-Page  | develop   | f51a9b2 | docs: add faq and footer section for i18n.js.            | 24/04/2026         |
-| HydroSmart-Landing-Page  | develop   | 9df8c1f | feat(faq and footer): add whole code and texts for the section            | 24/04/2026         |
-| HydroSmart-Landing-Page  | develop   | d47b924 | feat(faq and footer): add styles, colors, texts and icons related to the section            | 24/04/2026         |
+Durante el Sprint 1 se desarrolló la Landing Page basada en los diseños definidos previamente.
+
+**Incluye:**
+- Estructura HTML de la página
+- Estilos CSS para el diseño visual
+- Componentes básicos de la interfaz
+- Capturas de código
 ---
 
 ### 5.2.1.5. Execution Evidence for Sprint Review.
@@ -337,9 +327,9 @@ El repositorio HydroSmart-LandingPage inició su estructura base en la rama main
 
 El despliegue del Business Website se realizó utilizando GitHub Pages, aprovechando la integración directa con el repositorio del proyecto. Esta configuración permite que el sitio sea accesible públicamente y se actualice automáticamente con cada cambio en la rama principal.
 
-<img src="images/Deployment_Landing.jpeg" alt="Deployment_Landing" width="800">
+<img src="images/Landingpagedeployment.png" alt="Deployment_Landing" width="800">
 
-**URL:** https://upc-pre-1asi0730-2610-hydrosmart.github.io/HydroSmart-Landing-Page/
+**URL:** https://upc-pre-1asi0729-2610-12010-hydrosmart.github.io/HydroSmart-Landing-Page/
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint.
 
