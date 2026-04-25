@@ -28,7 +28,7 @@ Finalmente, el equipo dispone de un repositorio alterno, denominado upc-pre-1ASI
 
 
 <div>
-<img src="images/ourrepository.PNG" alt="Impact Mapping" width="800">
+<img src="images/ourrepository.png" alt="Impact Mapping" width="800">
 </div>
 
 
@@ -292,8 +292,8 @@ Durante el Sprint 1 se desarrolló la Landing Page basada en los diseños defini
 - Componentes básicos de la interfaz
 - Capturas de código
 
-<img src="images/HTML.PNG" alt="HTML" width="800">
-<img src="images/CSS.PNG" alt="CSS" width="800">
+<img src="images/HTML.png" alt="HTML" width="800">
+<img src="images/CSS.png" alt="CSS" width="800">
 ---
 
 ### 5.2.1.5. Execution Evidence for Sprint Review.
