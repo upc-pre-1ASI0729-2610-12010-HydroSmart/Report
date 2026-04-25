@@ -280,6 +280,8 @@ Alexandra Zavala, una estudiante de 19 años que alquila un departamento, busca 
 </p>
 RESUMEN
 
+Stephano, un estudiante de la UPC que comparte un cuarto alquilado, busca optimizar constantemente sus gastos básicos. Aunque considera que su uso del agua es eficiente, ha enfrentado cobros imprevistos en su recibo debido a descuidos cotidianos. Por ello, ve un gran potencial en la aplicación HydroSmart para monitorear su consumo diario y obtener estimaciones del pago a fin de mes. Estaría dispuesto a pagar una suscripción siempre y cuando la plataforma ofrezca una interfaz minimalista, presente los datos de forma clara y demuestre ayudarle efectivamente a ahorrar dinero en sus recibos mensuales.
+
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Entrevistador**    | Keyner Hancco                                                     |
