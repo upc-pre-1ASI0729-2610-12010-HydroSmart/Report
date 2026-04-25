@@ -255,7 +255,7 @@ RESUMEN
 
 **Entrevista 1:**
 <p align="center">
-  <img src="./images/Entrevista4.png" alt="entrevista1" width="400">
+  <img src="./images/Entrevista4.png" alt="entrevista4" width="400">
 </p>
 
 RESUMEN
@@ -276,7 +276,7 @@ Alexandra Zavala, una estudiante de 19 años que alquila un departamento, busca 
 **Entrevista 2:**
 
 <p align="center">
-  <img src="./images/Entrevista5.png" alt="entrevista1" width="400">
+  <img src="./images/Entrevista5.png" alt="entrevista5" width="400">
 </p>
 RESUMEN
 
@@ -292,7 +292,7 @@ RESUMEN
 **Entrevista 3:**
 
 <p align="center">
-  <img src="./images/Entrevista6.png" alt="entrevista1" width="700">
+  <img src="./images/Entrevista6.png" alt="entrevista6" width="700">
 </p>
 
 
