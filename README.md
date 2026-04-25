@@ -25,7 +25,7 @@ Consolidarse como la plataforma de referencia en eficiencia hídrica residencial
 ### 1.1.2. Perfiles de integrantes del equipo
 | Integrante                                                                        | Código Estudiante | Descripcion de Carrera | Conocimientos y Habilidades a apuntar |
 |-----------------------------------------------------------------------------------|-------------------|------------------------|---------------------------------------|
-| <img src="images/members/braden.jpeg" width="100"> Braden Raid Garcia Cerpa       | U202415618       | Ingeniería de Software |  Proactivo, Excelente trabajando en equipo y dominio en lenguajes como python, HTML, CSS y JS        |
+| <img src="images/members/braden.jpeg" width="100"> Braden Garcia Cerpa       | U202415618       | Ingeniería de Software |  Proactivo, Excelente trabajando en equipo y dominio en lenguajes como python, HTML, CSS y JS        |
 | <img src="images/members/keyner.jpeg" width="100"> <br> Keyner Ivan Hancco Poma           | U20221C726        | Ingeniería de Software | C++, Python, CSS, HTML, Figma, SQL, JS, Excelente en comunicación, organización y en el idioma inglés  |
 | <img src="images/members/hernan.jpeg" width="100"> <br> Hernan Gabriel Huayta Fuentes | UXXXXXXXX       | Ingeniería de Software |  |
 | <img src="images/members/victor.jpeg" width="100"> <br> Victor Manuel Espino Rossi        | UXXXXXXXX        | Ingeniería de Software |                                  |
