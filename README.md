@@ -23,13 +23,13 @@ Consolidarse como la plataforma de referencia en eficiencia hídrica residencial
 </div>
 
 ### 1.1.2. Perfiles de integrantes del equipo
-|    Integrante   | Descripcion de Carrera | Conocimientos y Habilidades a apuntar|
-| --------------------------------| ----------------------| ------------------------------------ |
-|![Braden Raid Garcia Cerpa](./imagenes/foto%20yazid.jpg) <br> Braden Raid Garcia Cerpa   |  |  |
-|![Keyner Ivan Hancco Poma](./imagenes/foto%20angelo.jpg) <br> Keyner Ivan Hancco Poma   |  |  |
-|![Hernan Gabriel Huayta Fuentes](./imagenes/foto%20Gonzalo.jpg) <br> Hernan Gabriel Huayta Fuentes               |  |  |
-|![Victor Manuel Espino Rossi](./imagenes/foto%20joan.jpg) <br> Victor Manuel Espino Rossi |  |  |
-|![Oscar Fernando Vara Velásquez](./imagenes/foto%20Antonio.jpg) <br> Oscar Fernando Vara Velásquez      |  |  |
+| Integrante                                                                        | Código Estudiante | Descripcion de Carrera | Conocimientos y Habilidades a apuntar |
+|-----------------------------------------------------------------------------------|-------------------|------------------------|---------------------------------------|
+| <img src="images/braden.jpeg" width="100"> Braden Raid Garcia Cerpa       | UXXXXXXXX       | Ingeniería de Software |          |
+| <img src="images/keyner.jpeg" width="100"> <br> Keyner Ivan Hancco Poma           | U20221C726        | Ingeniería de Software | C++, Python, CSS, HTML, Figma, SQL, JS, Excelente en comunicación, organización y en el idioma inglés  |
+| <img src="images/hernan.jpeg" width="100"> <br> Hernan Gabriel Huayta Fuentes | UXXXXXXXX       | Ingeniería de Software |  |
+| <img src="images/victor.jpeg" width="100"> <br> Victor Manuel Espino Rossi        | UXXXXXXXX        | Ingeniería de Software |                                  |
+| <img src="images/oscar.png" width="105"> Oscar Fernando Vara Velásquez             | UXXXXXXXX        | Ingeniería de Software |                    |
 
 
 ## 1.2. Solution Profile
