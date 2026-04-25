@@ -328,69 +328,8 @@ Durante este primer Sprint, el equipo avanzó la implementación del Business We
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
-A continuación, se presentan los commits que evidencian la construcción de esta capa de servicios y datos simulados:
 
-<table>
-  <tr>
-    <td align ="center" > <strong>Repository</strong></td>
-    <td  align ="center" > <strong>Branch</strong></td>
-    <td  align ="center" > <strong>Commit ID</strong></td>
-    <td  align ="center" > <strong>Commit message</strong></td>
-    <td  align ="center" > <strong>Commit Message body</strong></td>
-    <td  align ="center" > <strong>Commit on (date)</strong></td>
-  </tr>
-
-  <tr>
-    <td rowspan="7" align="center"> HydroSmart-LandingPage </td>
-    <td align="center"> main </td>
-    <td align="center"> 8f2a1b9 </td>
-    <td align="center"> Initial commit </td>
-    <td align="center"> Configuración inicial del repositorio y estructura base. </td>
-    <td align="center"> 08/04/2026 </td>
-  </tr>
-  <tr>
-    <td align="center"> feat/inicio </td>
-    <td align="center"> 2d9e4a1 </td>
-    <td align="center"> feat(home): add header and initial section </td>
-    <td align="center"> Implementación del Header, Hero section y soporte para i18n. </td>
-    <td align="center"> 19/04/2026 </td>
-  </tr>
-  <tr>
-    <td align="center"> feat/benefits </td>
-    <td align="center"> 5g3h7j2 </td>
-    <td align="center"> feat(benefits): add benefits section </td>
-    <td align="center"> Creación de la sección de beneficios con HTML y CSS responsivo. </td>
-    <td align="center"> 19/04/2026 </td>
-  </tr>
-  <tr>
-    <td align="center"> suscription </td>
-    <td align="center"> 9k1m4n6 </td>
-    <td align="center"> feat(suscription): add suscription plans </td>
-    <td align="center"> Diseño de tarjetas de suscripción y lógica de planes de ahorro. </td>
-    <td align="center"> 20/04/2026 </td>
-  </tr>
-  <tr>
-    <td align="center"> feat/nosotros </td>
-    <td align="center"> 3p2q8r5 </td>
-    <td align="center"> feat(nosotros): add team section </td>
-    <td align="center"> Agregado de la sección de equipo con fotos y descripciones. </td>
-    <td align="center"> 22/04/2026 </td>
-  </tr>
-  <tr>
-    <td align="center"> develop </td>
-    <td align="center"> 6v9w2x4 </td>
-    <td align="center"> feat(Features): Add Information </td>
-    <td align="center"> Detallado de información técnica en la sección de características. </td>
-    <td align="center"> 24/04/2026 </td>
-  </tr>
-  <tr>
-    <td align="center"> develop </td>
-    <td align="center"> 1z4y7x0 </td>
-    <td align="center"> feat(faq and footer): add functionality </td>
-    <td align="center"> Implementación final de la sección de FAQ y el pie de página. </td>
-    <td align="center"> 24/04/2026 </td>
-  </tr>
-</table>
+El repositorio HydroSmart-LandingPage inició su estructura base en la rama main. El desarrollo continuó con la implementación del header, la sección hero y la sección de beneficios a través de las ramas feat/inicio y feat/benefits. Posteriormente, se integraron los planes de suscripción en la rama suscription y la sección de equipo en feat/nosotros. Finalmente, se utilizaron commits en la rama develop para detallar la información técnica de las características, así como para añadir la funcionalidad de FAQ y el pie de página
 
 ---
 
