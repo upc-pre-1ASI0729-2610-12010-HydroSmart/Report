@@ -226,7 +226,13 @@ Fátima Gómez, analista de marketing, busca mayor control sobre el consumo de a
 
 **Entrevista 2:**
 
+
+<p align="center">
+  <img src="./images/Entrevista2.png" alt="entrevista2" width="400">
+</p>
+
 RESUMEN
+El entrevistado es un propietario de vivienda familiar en Lima que cuenta con jardín y gestiona el riego de forma manual. Tiene una preocupación moderada por el consumo de agua, principalmente por el costo económico, aunque no realiza un seguimiento constante. Su control es reactivo, ya que revisa el consumo únicamente al recibir el recibo mensual. Ha tenido problemas como fugas detectadas tardíamente, lo que le genera frustración por la falta de información en tiempo real. Muestra interés en una solución tecnológica que le permita monitorear su consumo, recibir alertas y optimizar el uso del agua, siempre que sea sencilla y efectiva.
 
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
