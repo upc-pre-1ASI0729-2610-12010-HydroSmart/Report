@@ -36,7 +36,7 @@
       <td>Oscar Fernando Vara Velásquez</td>
     </tr>
     <tr>
-      <td>UXXXXXXXX</td>
+      <td>U202411567</td>
       <td>Victor Manuel Espino Rossi</td>
     </tr>
     <tr>
