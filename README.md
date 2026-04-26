@@ -27,7 +27,7 @@ Consolidarse como la plataforma de referencia en eficiencia hídrica residencial
 |-----------------------------------------------------------------------------------|-------------------|------------------------|---------------------------------------|
 | <img src="images/members/braden.jpeg" width="100"> Braden Garcia Cerpa       | U202415618       | Ingeniería de Software |  Proactivo, Excelente trabajando en equipo y dominio en lenguajes como python, HTML, CSS y JS        |
 | <img src="images/members/keyner.jpeg" width="100"> <br> Keyner Ivan Hancco Poma           | U20221C726        | Ingeniería de Software | C++, Python, CSS, HTML, Figma, SQL, JS, Excelente en comunicación, organización y en el idioma inglés  |
-| <img src="images/members/hernan.jpeg" width="100"> <br> Hernan Gabriel Huayta Fuentes | UXXXXXXXX       | Ingeniería de Software |  |
+| <img src="images/members/hernan.jpeg" width="100"> <br> Hernan Gabriel Huayta Fuentes | U202320776       | Ingeniería de Software | SQL, Postgres, Prisma, TS, JS, HTML, CSS, Desarrollador fullstack, orientado a desarrollo frontend con agil aprendizaje |
 | <img src="images/members/Espino.jpeg" width="100"> <br> Victor Manuel Espino Rossi        | U202411567       | Ingeniería de Software |  Desarrollador proactivo con dominio en lenguajes como C++ y Python. Orientado a la creación de soluciones eficientes y excelente capacidad para el trabajo en equipo.                              |
 | <img src="images/members/Vara.jpeg" width="105"> Oscar Fernando Vara Velásquez             | U202411622        | Ingeniería de Software |  Enfocado en crear soluciones tecnológicas de acuerdo a las necesidades de los usuarios. Cuento una rápida adquisición de conocimientos y trabajo en equipo                  |
 
