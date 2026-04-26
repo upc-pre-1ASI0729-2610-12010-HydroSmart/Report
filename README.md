@@ -230,12 +230,12 @@ RESUMEN
 
 | **Detalle**          | **Información**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
-| **Entrevistador**    |                                                      |
-| **Entrevistado**     |                                  |
-| **Edad**             |                                              |
-| **Inicio entrevista**|                                                   |
-| **Duración**         |                                                   |
-| **Enlace**           | 
+| **Entrevistador**    | Hernan Huayta                                                     |
+| **Entrevistado**     | Juan Quispe                                 |
+| **Edad**             | 25                                             |
+| **Inicio entrevista**| 0:00                                                  |
+| **Duración**         | 5:14                                                   |
+| **Enlace**           | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320776_upc_edu_pe/IQBp6NKtSfYSRYAGmUctzGjaAffqbdpl18xiMpeR5DKJDog?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FGrCjh
 
 **Entrevista 3:**
 
