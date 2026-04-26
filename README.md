@@ -40,7 +40,7 @@
       <td>Victor Manuel Espino Rossi</td>
     </tr>
     <tr>
-      <td>UXXXXXXXX</td>
+      <td>U202320776</td>
       <td>Hernan Gabriel Huayta Fuentes</td>
     </tr>
   </tbody>
