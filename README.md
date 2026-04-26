@@ -244,19 +244,6 @@ El entrevistado es un propietario de vivienda familiar en Lima que cuenta con ja
 | **Duración**         | 5:14                                                   |
 | **Enlace**           | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320776_upc_edu_pe/IQBp6NKtSfYSRYAGmUctzGjaAffqbdpl18xiMpeR5DKJDog?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FGrCjh
 
-**Entrevista 3:**
-
-RESUMEN
-
-| **Detalle**          | **Información**                                                                 |
-|----------------------|---------------------------------------------------------------------------------|
-| **Entrevistador**    |                                                      |
-| **Entrevistado**     |                                  |
-| **Edad**             |                                              |
-| **Inicio entrevista**|                                                   |
-| **Duración**         |                                                   |
-| **Enlace**           | 
-
 
 **Entrevistas Segmento 2: Estudiantes que alquilan**
 
