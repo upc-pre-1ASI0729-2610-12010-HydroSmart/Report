@@ -349,7 +349,7 @@ Durante el Sprint 1, nuestra colaboración se centró principalmente en la reali
 - Incrementar la frecuencia de commits
 
 
-<img src="images/report-commits1-open.png" alt="commits1" width="800">
+<img src="images/report-commits1-open.PNG" alt="commits1" width="800">
 
 <img src="images/report-commits2-open.png" alt="commits2" width="800">
 
