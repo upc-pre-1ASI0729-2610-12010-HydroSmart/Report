@@ -351,13 +351,13 @@ Durante el Sprint 1, nuestra colaboración se centró principalmente en la reali
 
 <img src="images/report-commits1-open.PNG" alt="commits1" width="800">
 
-<img src="images/report-commits2-open.png" alt="commits2" width="800">
+<img src="images/report-commits2-open.PNG" alt="commits2" width="800">
 
-<img src="images/report-commits3-open.png" alt="commits3" width="800">
+<img src="images/report-commits3-open.PNG" alt="commits3" width="800">
 
-<img src="images/report-commits4-open.png" alt="commits4" width="800">
+<img src="images/report-commits4-open.PNG" alt="commits4" width="800">
 
-<img src="images/report-commits5-open.png" alt="commits5" width="800">
+<img src="images/report-commits5-open.PNG" alt="commits5" width="800">
 
 # Conclusiones y Recomendaciones
 
