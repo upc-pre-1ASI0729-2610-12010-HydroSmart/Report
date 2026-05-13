@@ -359,6 +359,61 @@ Durante el Sprint 1, nuestra colaboración se centró principalmente en la reali
 
 <img src="images/report-commits5-open.PNG" alt="commits5" width="800">
 
+
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+Durante el segundo Sprint se continuó con el desarrollo de la plataforma web HydroSmart, priorizando las funcionalidades y pantallas principales para propietarios y estudiantes que buscan alojamiento. En esta etapa se trabajó con información predefinida mediante datos hardcodeados y una base de datos simulada en db.json, permitiendo gestionar y visualizar la información de manera dinámica dentro del sistema. Asimismo, se mejoró la experiencia visual y la navegación de la aplicación, además de incorporar la internacionalización (i18n) para adaptar el contenido a distintos idiomas, logrando una versión más estable, uniforme y funcional de la plataforma.
+
+<table>
+<tr>
+    <th colspan="5">Sprint 2</th>
+    <th colspan="9">Sprint 2</th>
+  </tr>
+      <tr>
+    <td colspan="13">Sprint Planning Background</td>
+  </tr>
+  <tr>
+    <td colspan="5">Date</td>
+    <td colspan="8">2026-05-03</td>
+</tr>
+  <tr>
+    <td colspan="5">Time</td>
+    <td colspan="8">5:30 PM</td>
+  </tr>
+  <tr>
+    <td colspan="5">Location</td>
+    <td colspan="8">Via Meet</td>
+<tr>
+    <td colspan="5">Prepared By</td>
+    <td colspan="8">Keyner Iván Hancco Poma</td>
+</tr>
+<tr>
+    <td colspan="5">Attendees (to a planning meeting)</td>
+    <td colspan="8">Braden Raid Garcia Cerpa, Keyner Ivan Hancco Poma, Hernan Gabriel Huayta Fuentes, Victor Manuel Espino Rossi y Oscar Fernando Vara Velasquez</td>
+</tr>
+
+<tr>
+    <td colspan="13">Sprint Goal & User Stories</td>
+</tr>
+<tr>
+    <td colspan="5">Sprint 2 Goal</td>
+    <td colspan="8">Desarrollar y consolidar la estructura principal de la aplicación web AquaPulse, proporcionando una interfaz completamente conectada con la base de datos simulada para las pantallas principales y la administración de información correspondiente a los perfiles de propietarios y estudiantes arrendatarios, incorporando además una configuración inicial de soporte multilenguaje mediante i18n.</td>
+</tr>
+<tr>
+    <td colspan="5">Sprint 2 Velocity</td>
+    <td colspan="8">-</td>
+</tr>
+<tr>
+    <td colspan="5">Sum of Story Points</td>
+    <td colspan="8">-</td>
+</tr>
+</table>
+
+
+
 # Conclusiones y Recomendaciones
 
 ## Conclusiones
