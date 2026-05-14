@@ -416,11 +416,11 @@ Con la finalidad de mejorar la colaboración en equipo a cada integrante se asig
 
 | Team member (LastName, First Name) | GitHub UserName | Aspect 1: Consumption-Monitoring | Aspect 2: Rental Management | Aspect 3: Reports View | Aspect 4: Savings-Optimization | Aspect 5: INCIDENT-DETECTION |
 |------------------------------------|-----------------|------------------------------------|------------------------------------------|------------------------|------------------------|-------------------------|
-| García, Braden                  | BradeGarcia    | C                                  | C                                        | C                      | C                      | L                       |
+| Vara, Oscar                 | BradeGarcia    | C                                  | C                                        | C                      | C                      | L                       |
 | Huayta, Hernán                     | Homesman       | C                                  | C                                        | C                      | C                      | L                       |
 | Espino, Victor                | Vmer140       | C                                  | C                                        | C                      | L                      | C                       |
 | Hancco, Keyner                     | 1Kanan2         | L                                  | C                                        | C                      | C                      | C                       |
-| Vara, Oscar                     | varometro159       | C                                  | C                                        | L                      | C                      | C                       |
+| Garcia, Braden                     | varometro159       | C                                  | C                                        | L                      | C                      | C                       |
 
 #### 5.2.2.3. Sprint Backlog 2
 
