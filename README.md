@@ -482,16 +482,17 @@ Enlace al repositorio de la aplicación web: https://github.com/upc-pre-1ASI0730
 
 | Repository                                              | Branch             | Commit Id | Commint Message                                                                 | Commited on (Date) |
 |---------------------------------------------------------|--------------------|-----------|---------------------------------------------------------------------------------|--------------------|
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/profile       | 030a233   | feat: add profile management components and API integration.                    | 11/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/profile       | 4fc5f24   | feat: implement profile management with loading and saving functionality.       | 11/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/notifications | eb2b5c6   | feat: implement notifications panel with loading and error handling.            | 12/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/notifications | 346864c   | feat(notifications): add notification store, API integration, and notification view component. | 12/05/2026 |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/devices       | 630759d   | feat: add devices structure                                                     | 12/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/devices       | 00b03e0   | feat: add assembler and api for device                                          | 12/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/devices       | 6ee60fe   | feat(devices): add devices route configuration                                  | 12/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/settings      | 736d796   | feat(settings): add Notifications and alerts.                                   | 12/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/settings      | 0ce3c03   | feat(settings): Security & Privacy.                                             | 12/05/2026         |
-| upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend     | feat/settings      | 20659b6   | feat(settings): Add Help & Support.                                             | 12/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/main       | 1bfad23   | feat: initial angular project structure for HydroSmart                    | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/main       | beec8dc   | feat: initial project structure on new repo      | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/main | 048944e   | docs:consumption monitoring files.            | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/rental-management | 8b1blfb   | feat: implement Rental-management bounded context | 13/05/2026 |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization      | 14e6f92   | feat: create domain folder and content                                      | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization       | 00b03e0   | feat: add assembler and api for device                                          | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization       | 7d88a71   | feat: create infrastructure folder and content                                 | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization      | ae82c7c   | feat: create presentation folder and content                                   | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/incident-detection      | e18003d   | docs:incident-dection bounded context                                             | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/consumption-monitoring    | 2cd0683   | feat: implement comsuption monitoring bounded context                                             | 13/05/2026         |
+
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
