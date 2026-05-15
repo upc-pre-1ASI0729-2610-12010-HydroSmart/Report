@@ -82,6 +82,24 @@
 | 2.3 | 24/04/2026 | Homesman | Se agregaron evidencias de ejecución y despliegue. |
 | 2.4 | 24/04/2026 | Vmer140 | Se documentó la implementación de la Landing Page, servicios y aplicaciones. |
 | 2.5 | 24/04/2026 | Equipo | Se añadieron insights del equipo y cierre del proyecto. |
+| 2.6 | 13/05/2026 | 1Kanan2 | Se añadieron líderes de aspectos y colaboradores del Sprint 2. |
+| 2.7 | 13/05/2026 | 1Kanan2 | Se incorporaron evidencias de desarrollo para el Sprint 2 Review. |
+| 2.8 | 13/05/2026 | 1Kanan2 | Se agregaron evidencias de ejecución para el Sprint 2 Review. |
+| 2.9 | 13/05/2026 | 1Kanan2 | Se añadió documentación de servicios como evidencia para el Sprint Review. |
+| 3.0 | 13/05/2026 | 1Kanan2 | Se incorporó el Sprint Backlog 2. |
+| 3.1 | 13/05/2026 | varometro159 | Se añadieron evidencias visuales del Sprint 2 (imágenes). |
+| 3.2 | 13/05/2026 | varometro159 | Se agregaron imágenes de apoyo para commits. |
+| 3.3 | 13/05/2026 | varometro159 | Se actualizaron extensiones y tamaños de imágenes. |
+| 3.4 | 13/05/2026 | varometro159 | Se refactorizaron etiquetas de imágenes para mayor consistencia. |
+| 3.5 | 13/05/2026 | Homesman | Se añadieron evidencias de contribuciones del frontend. |
+| 3.6 | 13/05/2026 | Homesman | Se corrigieron nombres de archivos de imágenes. |
+| 3.7 | 13/05/2026 | Homesman | Se actualizaron imágenes del proyecto. |
+| 3.8 | 13/05/2026 | Vmer140 | Se actualizó el archivo README.md. |
+| 3.9 | 13/05/2026 | BradenGarcia | Se añadió evidencia de contribuciones en la documentación del Sprint 2. |
+| 4.0 | 13/05/2026 | BradenGarcia | Se incorporaron evidencias de commits del documento. |
+| 4.1 | 13/05/2026 | BradenGarcia | Se actualizaron detalles de despliegue y colaboración del proyecto. |
+
+
 </div>
 
 </div>
@@ -156,6 +174,62 @@ En la fase de diseño, se establecieron lineamientos visuales para garantizar co
 - **Modelado del Sistema.** Elaboración de diagramas y estructura inicial del sistema.  
 - **Planificación del Proyecto.** Construcción del backlog, planificación del sprint y coordinación del equipo.
 
+
+### Reporte de Colaboración para la Entrega del TB1
+
+**TB1 - Desarrollo del reporte y diseño de la solución AquaPulse:**
+
+En esta segunda entrega del proyecto AquaPulse, el trabajo se centró en establecer una base sólida tanto a nivel conceptual como de diseño, definiendo la propuesta de la startup y su aplicación orientada a la optimización del consumo de agua en entornos domésticos. Se priorizó la identificación de las necesidades de los usuarios, especialmente aquellos que buscan monitorear y comprender su consumo de agua, quienes presentan dificultades para interpretar su gasto y tomar decisiones informadas. A través de técnicas de análisis y levantamiento de información, se logró comprender la problemática y orientar el desarrollo de una solución alineada a estos contextos.
+
+A partir de este análisis, se desarrollaron componentes clave del proyecto como la definición del problema, la propuesta de valor y el enfoque Lean UX, que permitió estructurar las ideas de manera centrada en el usuario. Asimismo, se complementó con la elaboración de user personas y la identificación de sus principales comportamientos, objetivos y frustraciones, lo que facilitó una mejor comprensión del escenario de uso. Este proceso también permitió organizar la información necesaria para sustentar el diseño de la solución.
+
+En la fase de diseño, se establecieron lineamientos visuales para garantizar coherencia en la interfaz, junto con la definición de la arquitectura de información, incluyendo sistemas de organización, etiquetado y navegación. Se desarrollaron wireframes, mockups y flujos de usuario que representan las principales interacciones dentro de la plataforma, como la visualización del consumo, el análisis de datos y la gestión de alertas. Como resultado tangible, se implementaron prototipos de la aplicación web, evidenciando el avance alcanzado en esta etapa y dejando una base estructurada para las siguientes fases de desarrollo.
+
+## Contributors
+
+<img src="images/ng1.PNG" alt="Mi imagen" width="600"> <br>
+
+<img src="images/ng2.PNG" alt="Mi imagen" width="600"> <br>
+
+<img src="images/goboihl.PNG" alt="Mi imagen" width="600"> <br>
+
+**Espino Rossi, Victor Manuel**
+- **Módulo de Reportes.** Participó en la definición y diseño de la visualización del historial y análisis del consumo de agua.
+- **Investigación de Usuarios.** Apoyó en la construcción de user stories relacionadas al análisis de consumo.
+- **Diseño de la Aplicación.** Desarrolló wireframes y mockups enfocados en reportes y gráficos.
+- **Documentación.** Contribuyó en la elaboración del reporte del proyecto
+
+**Hancco Poma, Keyner Ivan**
+- **Módulo Dashboard - Analytics.** Lideró el diseño del dashboard principal para la visualización clara del consumo de agua.
+- **Gestión del Producto.** Participó en la elaboración del product backlog y definición de funcionalidades analíticas.
+- **Diseño de Aplicación Web.** Desarrolló wireframes, wireflows y mockups del dashboard.
+- **Documentación.** Apoyó en conclusiones y desarrollo del reporte.
+
+**Garcia Cerpa, Braden Raid**
+- **Módulo Profile y Notifications.** Participó en la definición de funcionalidades relacionadas al perfil de usuario y sistema de notificaciones.
+- **Lean UX Canvas y Segmentación.** Elaboró el Lean UX Canvas y definió segmentos de usuarios.
+- **Investigación y Análisis.** Diseñó entrevistas y desarrolló user personas.
+- **Diseño UX/UI.** Contribuyó en wireframes y mockups enfocados en experiencia del usuario.
+
+**Vara Velásquez, Oscar Fernando**
+- **Módulo Settings.** Participó en la definición de funcionalidades de configuración y personalización de la aplicación.
+- **Definición del Problema.** Desarrolló la problemática del proyecto y su contexto.
+- **Análisis del Usuario.** Elaboró user journey mapping y empathy mapping.
+- **Arquitectura Técnica.** Apoyó en la estructura inicial del sistema.
+
+**Huayta Fuentes, Hernán Gabriel**
+- **Módulo Devices.** Participó en la conceptualización de la gestión de dispositivos dentro de la plataforma.
+- **Análisis de Competencia.** Identificó soluciones similares en el mercado.
+- **Modelado del Dominio.** Apoyó en la definición del sistema y sus componentes.
+- **Prototipado Web.** Contribuyó en el desarrollo de interfaces.
+
+**Contribuciones Grupales**
+- **Investigación de Usuarios.** Desarrollo conjunto del análisis de necesidades relacionadas al consumo de agua.
+- **Diseño UX/UI.** Creación colaborativa de wireframes, mockups y flujos de usuario.
+- **Arquitectura de Información.** Definición de sistemas de organización, navegación y etiquetado.
+- **Planificación del Proyecto.** Construcción del backlog y organización del trabajo del equipo.
+
+
 # Contenido
 
 - [Student Outcome](#student-outcome)
@@ -222,6 +296,7 @@ En la fase de diseño, se establecieron lineamientos visuales para garantizar co
     - [4.8. Database Design](#48-database-design)
         - [4.8.1. Database Diagrams](#481-database-diagrams)
 
+
 - [Capítulo V: Product Implementation, Validation & Deployment](#capitulo-v-product-implementation-validation--deployment)
     - [5.1. Software Configuration Management](#51-software-configuration-management)
         - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
@@ -272,11 +347,10 @@ En la fase de diseño, se establecieron lineamientos visuales para garantizar co
 
 ## Student Outcome
 
-| Criterio Especifico | Acciones Realizadas | Conclusiones |
-|--------------------|--------------------|--------------|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Braden Raid Garcia Cerpa:**<br> **Acciones AV1:** Participé en la organización del equipo, apoyando en la definición de ideas clave y asegurando que todos mantuvieran una misma línea de trabajo. Coordiné tareas y apoyé en la toma de decisiones.<br><br> **Hancco Poma, Keyner Ivan:**<br> **Acciones AV1:** Colaboré en reuniones grupales y en la ejecución de tareas asignadas. Aporté ideas para mejorar el enfoque del landing y mantener el avance del equipo.<br><br> **Victor Manuel Espino Rossi:**<br> **Acciones AV1:** Contribuí en el diseño UX/UI y en la estructuración del contenido del landing. Apoyé en la coordinación del equipo y revisión de avances.<br><br> **Hernan Gabriel Huayta Fuentes:**<br> **Acciones AV1:** Participé en la planificación de tareas y en la organización del contenido. Apoyé en la comunicación del equipo para mantener coherencia.<br><br> **Oscar Fernando Vara Velásquez:**<br> **Acciones AV1:** Colaboré en la definición de ideas y en la organización del trabajo. Participé activamente en las coordinaciones grupales. | **Conclusión grupal AV1:**<br>El equipo logró mantener un liderazgo compartido, donde cada integrante aportó desde su rol para avanzar de manera coordinada. La comunicación constante y la organización de tareas permitieron un desarrollo ordenado del landing. Este enfoque facilitó la toma de decisiones y aseguró coherencia en el resultado final. |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Braden Raid Garcia Cerpa:**<br> **Acciones AV1:** Apoyé en la definición de objetivos y en la organización de tareas, asegurando claridad en las responsabilidades de cada integrante.<br><br> **Hancco Poma, Keyner Ivan:**<br> **Acciones AV1:** Participé en tareas asignadas y reuniones, manteniendo un ambiente colaborativo y cumpliendo con los objetivos.<br><br> **Victor Manuel Espino Rossi:**<br> **Acciones AV1:** Establecí metas para el diseño UX/UI y planifiqué tareas del landing, asegurando el cumplimiento de objetivos.<br><br> **Hernan Gabriel Huayta Fuentes:**<br> **Acciones AV1:** Colaboré en la planificación de actividades y mantuve comunicación constante para un avance ordenado.<br><br> **Oscar Fernando Vara Velásquez:**<br> **Acciones AV1:** Participé en la organización del trabajo y en la planificación de tareas, contribuyendo al cumplimiento de metas. | **Conclusión grupal AV1:**<br>Se logró un entorno colaborativo donde se definieron metas claras y se organizaron las tareas de manera eficiente. La participación activa permitió cumplir los objetivos establecidos, manteniendo un trabajo ordenado y alineado con lo requerido. |
-
+| Criterio Especifico | Acciones Realizadas | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|--------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Braden Raid Garcia Cerpa:**<br> **Acciones AV1:** Participé en la organización del equipo, apoyando en la definición de ideas clave y asegurando que todos mantuvieran una misma línea de trabajo. Coordiné tareas y apoyé en la toma de decisiones.<br> **Acciones TB1:** Contribuí en la definición de funcionalidades del módulo de reportes y apoyé en la organización del equipo para el desarrollo de la propuesta de solución.<br><br> **Hancco Poma, Keyner Ivan:**<br> **Acciones AV1:** Colaboré en reuniones grupales y en la ejecución de tareas asignadas. Aporté ideas para mejorar el enfoque del landing y mantener el avance del equipo.<br> **Acciones TB1:** Lideré la definición del dashboard analítico, proponiendo ideas para la visualización del consumo y asegurando coherencia en el diseño.<br><br> **Victor Manuel Espino Rossi:**<br> **Acciones AV1:** Contribuí en el diseño UX/UI y en la estructuración del contenido del landing. Apoyé en la coordinación del equipo y revisión de avances.<br> **Acciones TB1:** Participé en la definición de funcionalidades de perfil y notificaciones, apoyando en la experiencia de usuario y coherencia del sistema.<br><br> **Hernan Gabriel Huayta Fuentes:**<br> **Acciones AV1:** Participé en la planificación de tareas y en la organización del contenido. Apoyé en la comunicación del equipo para mantener coherencia.<br> **Acciones TB1:** Definí aspectos del módulo de configuración, asegurando que las opciones de personalización estén alineadas con las necesidades del usuario.<br><br> **Oscar Fernando Vara Velásquez:**<br> **Acciones AV1:** Colaboré en la definición de ideas y en la organización del trabajo. Participé activamente en las coordinaciones grupales.<br> **Acciones TB1:** Apoyé en la conceptualización del módulo de dispositivos, proponiendo ideas para su gestión dentro del sistema. | **Conclusión grupal AV1:**<br>El equipo logró mantener un liderazgo compartido, donde cada integrante aportó desde su rol para avanzar de manera coordinada. La comunicación constante y la organización de tareas permitieron un desarrollo ordenado del landing. Este enfoque facilitó la toma de decisiones y aseguró coherencia en el resultado final.<br><br> **Conclusión grupal TB1:**<br>El equipo mantuvo un liderazgo colaborativo, distribuyendo responsabilidades por módulos y asegurando una participación activa de todos los integrantes. La coordinación permitió avanzar de forma organizada en la definición de la solución y sentar bases claras para el desarrollo del sistema. |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Braden Raid Garcia Cerpa:**<br> **Acciones AV1:** Apoyé en la definición de objetivos y en la organización de tareas, asegurando claridad en las responsabilidades de cada integrante.<br> **Acciones TB1:** Participé en la planificación de tareas relacionadas a reportes y en la organización de actividades del equipo.<br><br> **Hancco Poma, Keyner Ivan:**<br> **Acciones AV1:** Participé en tareas asignadas y reuniones, manteniendo un ambiente colaborativo y cumpliendo con los objetivos.<br> **Acciones TB1:** Definí objetivos para el desarrollo del dashboard y coordiné tareas relacionadas al análisis de consumo.<br><br> **Victor Manuel Espino Rossi:**<br> **Acciones AV1:** Establecí metas para el diseño UX/UI y planifiqué tareas del landing, asegurando el cumplimiento de objetivos.<br> **Acciones TB1:** Planifiqué tareas relacionadas a perfil y notificaciones, asegurando una experiencia de usuario coherente.<br><br> **Hernan Gabriel Huayta Fuentes:**<br> **Acciones AV1:** Colaboré en la planificación de actividades y mantuve comunicación constante para un avance ordenado.<br> **Acciones TB1:** Participé en la planificación del módulo de configuración y en la organización de tareas del equipo.<br><br> **Oscar Fernando Vara Velásquez:**<br> **Acciones AV1:** Participé en la organización del trabajo y en la planificación de tareas, contribuyendo al cumplimiento de metas.<br> **Acciones TB1:** Apoyé en la planificación de funcionalidades relacionadas a dispositivos y en la coordinación del trabajo grupal. | **Conclusión grupal AV1:**<br>Se logró un entorno colaborativo donde se definieron metas claras y se organizaron las tareas de manera eficiente. La participación activa permitió cumplir los objetivos establecidos, manteniendo un trabajo ordenado y alineado con lo requerido.<br><br> **Conclusión grupal TB1:**<br>El equipo logró establecer metas claras y distribuir tareas de acuerdo a los módulos del sistema. La planificación permitió cumplir los objetivos planteados y avanzar de manera organizada en la construcción de la propuesta de AquaPulse.                                                                                                                                |
 <div style="page-break-after: always;"></div>
 
 
