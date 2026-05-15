@@ -1,0 +1,6 @@
+node_modules/
+*.pdf
+convert.js
+README.html
+package.json
+package-lock.json
