@@ -2201,43 +2201,39 @@ Durante la ejecución del sprint se consiguieron completar satisfactoriamente to
 
 5. Integración del soporte multilenguaje (i18n), reforzando la disponibilidad de la aplicación en más de un idioma y asegurando una interacción más inclusiva para diferentes tipos de usuarios.
 
-**Configuración**
+**Login**
 <div>
-  <img src="images/configuracion.png" alt="Configuración " width="800">
-</div>
-<div>
- <img src="images/configuracion2.png" alt="Configuración " width="800">
-</div> 
-
-**Edición del Perfil**
-<div>
-  <img src="images/edicion-perfil.png" alt="Edición del Perfil" width="800">
-</div>
-
-**Reportes**
-<div>
-  <img src="images/reportes.png" alt="Reportes" width="800">
-</div>
-
-**Administración de Dispositivos**
-<div>
-  <img src="images/devices.png" alt="Dispositivos" width="800">
-</div>
-<div>
-  <img src="images/editar-device.png" alt="Editar Dispositivo" width="800">
+  <img src="images/execution-login.png" alt="Login" width="800">
 </div>
 
 **Dashboard**
 <div>
-  <img src="images/dashboard.png" alt="Dashboard" width="800">
-</div>  
-<div>
-  <img src="images/dashboard2.png" alt="Dashboard" width="800">
+  <img src="images/execution-dashboard.png" alt="Dashboard" width="800">
 </div>
 
- **Notificaciones** 
+**Dashboard and Notifications**
 <div>
-  <img src="images/notificaciones.png" alt="Notificaciones" width="800">
+  <img src="images/execution-dashboard-notifications.png" alt="Dashboard and Notifications" width="800">
+</div>
+
+**Profile**
+<div>
+  <img src="images/execution-profile.png" alt="Profile" width="800">
+</div>
+
+**Devices**
+<div>
+  <img src="images/execution-devices.png" alt="Devices" width="800">
+</div>
+
+**Reports**
+<div>
+  <img src="images/execution-reports.png" alt="Reports" width="800">
+</div>
+
+**Settings**
+<div>
+  <img src="images/execution-settings.png" alt="Settings" width="800">
 </div>
 
 **Internacionalización**
