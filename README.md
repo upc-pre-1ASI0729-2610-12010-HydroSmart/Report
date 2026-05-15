@@ -2236,9 +2236,9 @@ Durante la ejecución del sprint se consiguieron completar satisfactoriamente to
   <img src="images/execution-settings.png" alt="Settings" width="800">
 </div>
 
-**Internacionalización**
+**Internacionalización** (El boton del header se encarga de cambiar idioma)
 <div>
-  <img src="images/internacionalizacion.png" alt="Internacionalización de la plataforma" width="800">
+  <img src="images/execution-internacionalizacion.png" alt="Internacionalización de la plataforma" width="800">
 </div>
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
