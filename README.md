@@ -2064,6 +2064,239 @@ Durante el Sprint 1, nuestra colaboración se centró principalmente en la reali
 
 <img src="images/report-commits5-open.PNG" alt="commits5" width="800">
 
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+Durante el segundo Sprint se continuó con el desarrollo de la plataforma web AquaPulse, priorizando las funcionalidades y pantallas principales para propietarios y estudiantes que buscan alojamiento. En esta etapa se trabajó con información predefinida mediante datos hardcodeados y una base de datos simulada en db.json, permitiendo gestionar y visualizar la información de manera dinámica dentro del sistema. Asimismo, se mejoró la experiencia visual y la navegación de la aplicación, además de incorporar la internacionalización (i18n) para adaptar el contenido a distintos idiomas, logrando una versión más estable, uniforme y funcional de la plataforma.
+
+<table>
+<tr>
+    <th colspan="5">Sprint 2</th>
+    <th colspan="9">Sprint 2</th>
+  </tr>
+      <tr>
+    <td colspan="13">Sprint Planning Background</td>
+  </tr>
+  <tr>
+    <td colspan="5">Date</td>
+    <td colspan="8">2026-05-03</td>
+</tr>
+  <tr>
+    <td colspan="5">Time</td>
+    <td colspan="8">5:30 PM</td>
+  </tr>
+  <tr>
+    <td colspan="5">Location</td>
+    <td colspan="8">Via Zoom</td>
+<tr>
+    <td colspan="5">Prepared By</td>
+    <td colspan="8">Hancco Poma, Keyner Iván</td>
+</tr>
+<tr>
+    <td colspan="5">Attendees (to a planning meeting)</td>
+    <td colspan="8">Braden Raid Garcia Cerpa, Keyner Ivan Hancco Poma, Hernan Gabriel Huayta Fuentes, Victor Manuel Espino Rossi y Oscar Fernando Vara Velasquez</td>
+</tr>
+
+<tr>
+    <td colspan="13">Sprint Goal & User Stories</td>
+</tr>
+<tr>
+    <td colspan="5">Sprint 2 Goal</td>
+    <td colspan="8">Desarrollar y consolidar la estructura principal de la aplicación web AquaPulse, proporcionando una interfaz completamente conectada con la base de datos simulada para las pantallas principales y la administración de información correspondiente a los perfiles de propietarios y estudiantes arrendatarios, incorporando además una configuración inicial de soporte multilenguaje mediante i18n.</td>
+</tr>
+<tr>
+    <td colspan="5">Sprint 2 Velocity</td>
+    <td colspan="8">31</td>
+</tr>
+<tr>
+    <td colspan="5">Sum of Story Points</td>
+    <td colspan="8">39</td>
+</tr>
+</table>
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Con la finalidad de mejorar la colaboración en equipo a cada integrante se asignó un rol de líder por cada aspecto. Los aspectos están relacionados con los entregables.
+
+| Team member (LastName, First Name) | GitHub UserName | Aspect 1: Consumption-Monitoring | Aspect 2: Rental Management | Aspect 3: Reports View | Aspect 4: Savings-Optimization | Aspect 5: INCIDENT-DETECTION |
+|------------------------------------|-----------------|------------------------------------|------------------------------------------|------------------------|------------------------|-------------------------|
+| Vara, Oscar                 | BradeGarcia    | C                                  | C                                        | C                      | C                      | L                       |
+| Huayta, Hernán                     | Homesman       | C                                  | C                                        | C                      | C                      | L                       |
+| Espino, Victor                | Vmer140       | C                                  | C                                        | C                      | L                      | C                       |
+| Hancco, Keyner                     | 1Kanan2         | L                                  | C                                        | C                      | C                      | C                       |
+| Garcia, Braden                     | varometro159       | C                                  | C                                        | L                      | C                      | C                       |
+
+#### 5.2.2.3. Sprint Backlog 2
+
+El presente Sprint Backlog se enfoca en consolidar las funcionalidades clave de la aplicación web AquaPulse, orientadas a la optimización del consumo de agua en el hogar. En este sprint, el objetivo principal es implementar características relacionadas con la visualización y análisis del consumo, así como la gestión de alertas y notificaciones, permitiendo a los usuarios interpretar su gasto de manera clara y tomar decisiones informadas.
+
+Asimismo, se priorizó el desarrollo de componentes como el dashboard analítico, el historial de consumo, la proyección de gasto mensual y los sistemas de alertas ante consumos inusuales o posibles fugas. Estas funcionalidades fueron implementadas utilizando una fuente de datos simulada mediante db.json, lo que permitió trabajar con información dinámica sin requerir un backend desplegado, manteniendo una arquitectura preparada para futuras integraciones.
+
+A continuación, se presenta la tabla de control del Sprint 2, donde se detallan las historias de usuario trabajadas, junto con sus respectivas tareas (Work Items), descripciones funcionales, estimaciones de tiempo, responsables asignados y el estado actual de cada actividad.
+
+<table>
+  <tr>
+    <th colspan="7">Sprint 2 – Work Items / Tasks (AquaPulse)</th>
+  </tr>
+  <tr>
+    <th>User Story ID</th>
+    <th>Task ID</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  <!-- EP02 -->
+  <tr><td colspan="7"><b>EP02 – Visualización y Análisis de Consumo</b></td></tr>
+
+  <tr><td>US05</td><td>UT01</td><td>Diseñar dashboard de consumo</td><td>Crear interfaz clara con indicadores visuales para interpretar el consumo de agua.</td><td>4h</td><td>Keyner Hancco</td><td>Done</td></tr>
+  <tr><td></td><td>UT02</td><td>Implementar etiquetas y colores</td><td>Agregar ayudas visuales como colores, iconos y etiquetas explicativas.</td><td>3h</td><td>Victor Espino</td><td>Done</td></tr>
+
+  <tr><td>US06</td><td>UT03</td><td>Visualizar historial de consumo</td><td>Desarrollar gráficos de consumo filtrados por períodos de tiempo.</td><td>4h</td><td>Hernan Huayta</td><td>Done</td></tr>
+  <tr><td></td><td>UT04</td><td>Manejo de historial vacío</td><td>Mostrar mensaje cuando no existan datos históricos disponibles.</td><td>2h</td><td>Hernan Huayta</td><td>Done</td></tr>
+
+  <tr><td>US07</td><td>UT05</td><td>Proyección de gasto mensual</td><td>Calcular y mostrar estimación del consumo mensual en soles.</td><td>4h</td><td>Keyner Hancco</td><td>Done</td></tr>
+  <tr><td></td><td>UT06</td><td>Validar datos insuficientes</td><td>Indicar al usuario cuando no hay suficiente información para generar proyección.</td><td>2h</td><td>Braden Garcia</td><td>Done</td></tr>
+
+  <!-- EP03 -->
+  <tr><td colspan="7"><b>EP03 – Alertas y Configuración</b></td></tr>
+
+  <tr><td>US08</td><td>UT07</td><td>Implementar alertas de consumo</td><td>Detectar consumo elevado y generar notificaciones automáticas.</td><td>3h</td><td>Oscar Vara</td><td>Done</td></tr>
+  <tr><td></td><td>UT08</td><td>Notificación de consumo normal</td><td>Validar que no se envíen alertas si el consumo está dentro del rango.</td><td>2h</td><td>Oscar Vara</td><td>Done</td></tr>
+
+  <tr><td>US09</td><td>UT09</td><td>Detección de fugas</td><td>Identificar patrones anómalos de consumo continuo.</td><td>4h</td><td>Victor Espino</td><td>Done</td></tr>
+
+  <tr><td>US10</td><td>UT10</td><td>Configuración de notificaciones</td><td>Permitir al usuario personalizar qué alertas desea recibir.</td><td>3h</td><td>Braden Garcia</td><td>Done</td></tr>
+
+  <!-- EP06 -->
+  <tr><td colspan="7"><b>EP06 – Análisis Comparativo</b></td></tr>
+
+  <tr><td>US16</td><td>UT11</td><td>Comparativo semanal</td><td>Mostrar gráfico comparativo entre consumo de semanas.</td><td>4h</td><td>Hernan Huayta</td><td>Done</td></tr>
+
+</table>
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+En esta sección se demuestran los commits relacionados con los principales avances en la implementación.
+Estos commits provienen del repositorio de la aplicación web de la organización de GitHub.
+
+Enlace al repositorio de la aplicación web: https://github.com/upc-pre-1ASI0730-2610-HydroSmart/HydroSmart-Frontend
+
+| Repository                                              | Branch             | Commit Id | Commint Message                                                                 | Commited on (Date) |
+|---------------------------------------------------------|--------------------|-----------|---------------------------------------------------------------------------------|--------------------|
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/main       | 1bfad23   | feat: initial angular project structure for HydroSmart                    | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/main       | beec8dc   | feat: initial project structure on new repo      | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/main | 048944e   | docs:consumption monitoring files.            | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/rental-management | 8b1blfb   | feat: implement Rental-management bounded context | 13/05/2026 |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization      | 14e6f92   | feat: create domain folder and content                                      | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization       | 00b03e0   | feat: add assembler and api for device                                          | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization       | 7d88a71   | feat: create infrastructure folder and content                                 | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/savings-optimization      | ae82c7c   | feat: create presentation folder and content                                   | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/incident-detection      | e18003d   | docs:incident-dection bounded context                                             | 13/05/2026         |
+| upc-pre-1ASI0729-2610-12010-HydroSmart     | feat/consumption-monitoring    | 2cd0683   | feat: implement comsuption monitoring bounded context                                             | 13/05/2026         |
+
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+Durante la ejecución del sprint se consiguieron completar satisfactoriamente todos los objetivos planteados, logrando implementar las funcionalidades clave del sistema de gestión AquaPulse y consolidando una base firme para la administración eficiente del consumo de agua en entornos domésticos. Entre las principales características desarrolladas se destacan las siguientes:
+
+1. Configuración y edición del perfil de usuario, brindando la posibilidad de ajustar y adaptar la experiencia dentro de la aplicación según las preferencias individuales.
+
+2. Consulta y exportación de reportes, incorporando opciones de filtrado por rangos de fechas y categorías, así como la capacidad de descargar la información recopilada en distintos formatos disponibles.
+
+3. Administración de dispositivos, permitiendo gestionar de manera más ordenada e intuitiva los distintos equipos vinculados dentro del sistema.
+
+4. Implementación de internacionalización (i18n), facilitando el uso de la plataforma en dos idiomas distintos para mejorar la accesibilidad de los usuarios.
+
+5. Integración del soporte multilenguaje (i18n), reforzando la disponibilidad de la aplicación en más de un idioma y asegurando una interacción más inclusiva para diferentes tipos de usuarios.
+
+**Configuración**
+<div>
+  <img src="images/configuracion.png" alt="Configuración " width="800">
+</div>
+<div>
+ <img src="images/configuracion2.png" alt="Configuración " width="800">
+</div> 
+
+**Edición del Perfil**
+<div>
+  <img src="images/edición-perfil.png" alt="Edición del Perfil" width="800">
+</div>
+
+**Reportes**
+<div>
+  <img src="images/reportes.png" alt="Reportes" width="800">
+</div>
+
+**Administración de Dispositivos**
+<div>
+  <img src="images/devices.png" alt="Dispositivos" width="800">
+</div>
+<div>
+  <img src="images/editar-device.png" alt="Editar Dispositivo" width="800">
+</div>
+
+**Dashboard**
+<div>
+  <img src="images/dashboard.png" alt="Dashboard" width="800">
+</div>  
+<div>
+  <img src="images/dashboard2.png" alt="Dashboard" width="800">
+</div>
+
+ **Notificaciones** 
+<div>
+  <img src="images/notificaciones.png" alt="Notificaciones" width="800">
+</div>
+
+**Internacionalización**
+<div>
+  <img src="images/internacionalizacion.png" alt="Internacionalización de la plataforma" width="800">
+</div>
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2 del proyecto AquaPulse, el desarrollo se enfocó en la implementación funcional de la aplicación web, integrando la interfaz de usuario con una fuente de datos local basada en un archivo db.json. Este enfoque permitió simular el comportamiento de una API, facilitando el manejo de información dinámica sin necesidad de contar con un backend desplegado.
+
+**Estado actual:**
+
+- Se desarrollaron e integraron las principales vistas de la plataforma (Dashboard, Profile, Settings, Devices, Reports y Settings), asegurando una experiencia visual uniforme, una navegación fluida y una correcta interacción con los datos simulados.
+
+- La gestión de datos se realiza mediante un archivo db.json, el cual define las colecciones utilizadas en la aplicación y permite replicar operaciones tipo CRUD (crear, leer, actualizar y eliminar) a través de herramientas locales como json-server.
+
+- Aún no se ha implementado una capa backend con controladores, servicios ni lógica de negocio avanzada; no obstante, la arquitectura actual se encuentra preparada para incorporar estos elementos en futuras fases del proyecto.
+
+- Se habilitaron funcionalidades interactivas relevantes, como la edición de información del usuario, la actualización de datos simulados y la visualización de contenido dinámico dentro de la aplicación.
+
+- Además, se reforzó la internacionalización (i18n), logrando una interfaz moderna, comprensible y adaptable a distintos idiomas, mejorando así la experiencia del usuario.
+
+En este sprint 2, el enfoque principal estuvo en las épicas relacionadas con la construcción del frontend y la simulación de una API mediante db.json, lo que permitió emular la interacción con un sistema backend real. Este avance permitió consolidar una versión funcional de AquaPulse, orientada a la optimización del consumo de agua, facilitando la gestión dinámica de datos y dejando una base preparada para la futura implementación de un backend con mayor complejidad y persistencia real.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+El despliegue del Frontend de AquaPulse se realizó utilizando Netlify, aprovechando su integración directa con el repositorio del proyecto alojado en GitHub. Esta configuración permite que el sitio sea accesible públicamente y se actualice automáticamente con cada cambio realizado en la rama principal, facilitando un flujo de despliegue continuo y eficiente.
+
+<div>
+  <img src="images/evidence-frontend-deployment.jpeg" alt="Deployment Evidence" width="800">
+</div>
+
+**URL:https://hydrosmartweb.netlify.app/#/dashboard**
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+Durante el Sprint 2, nuestra colaboración se centró principalmente en la actualización del documento y frontend de AquaPulse. El equipo utilizó GitHub Projects para la gestión de tareas, asegurando que cada sección fuera desarrollado correctamente y a tiempo.
+
+### Gráfico de Contribuciones del equipo
+
+### Contribuciones al desarrollo del Frontend
+
+
+### Contribuciones al desarrollo del Documento:
+
+
+
 # Conclusiones y Recomendaciones
 
 ## Conclusiones
@@ -2089,6 +2322,17 @@ Durante el Sprint 1, nuestra colaboración se centró principalmente en la reali
 - **Los objetivos de negocio son alcanzables y están bien planteados:**  
   Las metas definidas, alcanzar 800 usuarios activos en 6 meses y aumentar la retención en un 25% en 9 meses, son ambiciosas pero realistas si se acompañan de una buena estrategia de onboarding, contenido educativo y alianzas institucionales. El Impact Mapping desarrollado conecta correctamente esos objetivos con acciones concretas dentro del producto.
 
+- **La implementación del frontend permitió materializar la propuesta de valor de HydroSmart en una solución funcional:**
+Durante este sprint se logró transformar los requerimientos funcionales y los diseños previamente definidos en una aplicación web interactiva, permitiendo que la propuesta planteada deje de ser únicamente conceptual y se convierta en una plataforma navegable, accesible y orientada a resolver una necesidad real relacionada con el consumo responsable del agua.
+
+- **El uso de tecnologías modernas facilitó un desarrollo escalable y mantenible:**
+La utilización de Vue.js como framework principal y Vite como herramienta de construcción permitió implementar una arquitectura basada en componentes reutilizables, favoreciendo la organización del código, la escalabilidad del sistema y la facilidad para incorporar nuevas funcionalidades en futuras etapas del proyecto.
+
+- **La simulación de datos permitió validar el comportamiento funcional del sistema:**
+El uso de una base de datos simulada mediante archivos locales permitió probar de forma efectiva la interacción entre la interfaz y los datos dinámicos, validando procesos clave como visualización, edición y actualización de información, además de preparar técnicamente la plataforma para una futura integración con un backend real.
+
+- **Esta entrega establece una base sólida para la evolución futura del sistema:**
+Con el frontend implementado y funcional, HydroSmart cuenta ahora con una base tecnológica estable sobre la cual podrán integrarse nuevas capas de desarrollo, como servicios backend, conexión con dispositivos IoT y funcionalidades avanzadas de análisis predictivo, fortaleciendo así la visión de largo plazo del proyecto.
 
 ## Recomendaciones
 
