@@ -1451,12 +1451,6 @@ Devices 1 - Wireframe
     <img src="images/web-applications-wireframes-devices1.PNG" alt="Devices1 Wireframe" width="500">
 </div>
 
-Devices 2 - Wireframe
-
-<div align="center">
-    <img src="images/web-applications-wireframes-devices2.PNG" alt="Devices2 Wireframe" width="500">
-</div>
-
 Reports - Wireframe
 
 <div align="center">
@@ -1509,12 +1503,6 @@ Devices 1 - Mock-Up
 
 <div align="center">
     <img src="images/web-applications-mockups-devices1.PNG" alt="Devices1 Mock Up" width="500">
-</div>
-
-Devices 2 - Mock-Up
-
-<div align="center">
-    <img src="images/web-applications-mockups-devices2.PNG" alt="Devices2 Mock Up" width="500">
 </div>
 
 Reports - Mock-Up
