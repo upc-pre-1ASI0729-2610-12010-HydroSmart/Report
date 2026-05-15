@@ -2015,7 +2015,7 @@ Durante este primer Sprint, el equipo avanzó la implementación del Business We
 
 3. Sección Características:
 
-<img src="images/Características.jpeg" alt="Características.jpeg" width="800">
+<img src="images/Caracteristicas.jpeg" alt="Caracteristicas.jpeg" width="800">
 
 4. Sección Planes:
 
@@ -2223,7 +2223,7 @@ Durante la ejecución del sprint se consiguieron completar satisfactoriamente to
 
 **Edición del Perfil**
 <div>
-  <img src="images/edición-perfil.png" alt="Edición del Perfil" width="800">
+  <img src="images/edicion-perfil.png" alt="Edición del Perfil" width="800">
 </div>
 
 **Reportes**
@@ -2277,13 +2277,13 @@ En este sprint 2, el enfoque principal estuvo en las épicas relacionadas con la
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-El despliegue del Frontend de AquaPulse se realizó utilizando Netlify, aprovechando su integración directa con el repositorio del proyecto alojado en GitHub. Esta configuración permite que el sitio sea accesible públicamente y se actualice automáticamente con cada cambio realizado en la rama principal, facilitando un flujo de despliegue continuo y eficiente.
+El despliegue del Frontend de AquaPulse se realizó utilizando Vercel, aprovechando su integración directa con el repositorio del proyecto alojado en GitHub. Esta configuración permite que el sitio sea accesible públicamente y se actualice automáticamente con cada cambio realizado en la rama principal, facilitando un flujo de despliegue continuo y eficiente.
 
 <div>
   <img src="images/evidence-frontend-deployment.jpeg" alt="Deployment Evidence" width="800">
 </div>
 
-**URL:https://hydrosmartweb.netlify.app/#/dashboard**
+**URL:https://hydrosmart-web.vercel.app/#/dashboard**
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 Durante el Sprint 2, nuestra colaboración se centró principalmente en la actualización del documento y frontend de AquaPulse. El equipo utilizó GitHub Projects para la gestión de tareas, asegurando que cada sección fuera desarrollado correctamente y a tiempo.
