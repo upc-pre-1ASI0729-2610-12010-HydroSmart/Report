@@ -624,11 +624,6 @@ La Matriz LACX (Leadership and Collaboration Matrix) permite visualizar la distr
 | Hancco, Keyner | 1Kanan2 | C | C | C | **L** | C | C |
 | García, Braden | BradenGarcia | C | C | C | C | **L** | C |
 
-#### 5.2.3.3. Sprint Backlog 3.
-
-El Sprint Backlog 3 se orienta a la construcción del backend REST de HydroSmart y a su integración con la aplicación web. El objetivo principal fue implementar, por cada bounded context, el modelo de dominio, la lógica de negocio (command services), la persistencia en MySQL mediante JPA y los endpoints REST con seguridad por roles, para luego conectar la interfaz Angular y eliminar la dependencia de los datos simulados.
-
-A continuación se presenta el **tablero del Sprint 3** en la herramienta de control del equipo, junto con su URL pública:
 
 #### 5.2.3.3. Sprint Backlog 3
  
@@ -686,8 +681,6 @@ A continuación, se presenta la tabla de control del Sprint 3, donde se detallan
 </table>
 
 A continuación, la tabla de control de estado del Sprint 3, con las User Stories, sus tareas (Work Items), descripciones, estimaciones, responsables y estado.
-
-> Nota: Los identificadores de User Story (US) deben alinearse con el Product Backlog oficial del equipo; las estimaciones en horas son referenciales y reflejan el esfuerzo de implementación realizado. El responsable de cada tarea coincide con el autor de los commits del bounded context correspondiente.
 
 | User Story ID | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|---|
@@ -861,23 +854,23 @@ Resumen de contribuciones por integrante (según commits del Sprint 3):
 **Analíticos de colaboración de GitHub:**
 
 <div>
-<img src="images/insights-contributors-sprint3.png" alt="Impact Mapping" width="800">
+<img src="images/insights-contributors-sprint3.png" alt="insights-contributors-sprint3" width="800">
 </div>
 
 <div>
-<img src="images/insights-commits-sprint3-1.png" alt="Impact Mapping" width="800">
+<img src="images/insights-commits-sprint3-1.png" alt="insights-commits-sprint3-1" width="800">
 </div>
 
 <div>
-<img src="images/insights-commits-sprint3-2.png" alt="Impact Mapping" width="800">
+<img src="images/insights-commits-sprint3-2.PNG" alt="insights-commits-sprint3-2" width="800">
 </div>
 
 <div>
-<img src="images/insights-commits-sprint3-3.png" alt="Impact Mapping" width="800">
+<img src="images/insights-commits-sprint3-3.PNG" alt="insights-commits-sprint3-3" width="800">
 </div>
 
 <div>
-<img src="images/insights-commits-sprint3-4.png" alt="Impact Mapping" width="800">
+<img src="images/insights-commits-sprint3-4.PNG" alt="insights-commits-sprint3-4" width="800">
 </div>
 
 - `![network-graph](./images/network-graph.png)` — Network graph mostrando las ramas por bounded context.
