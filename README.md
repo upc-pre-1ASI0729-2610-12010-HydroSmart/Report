@@ -2566,11 +2566,7 @@ Resumen de contribuciones por integrante (según commits del Sprint 3):
 <img src="images/insights-commits-sprint3-4.PNG" alt="insights-commits-sprint3-4" width="800">
 </div>
 
-<div align="center">
-    <img src="./images/network-graph.png" alt="Network graph mostrando las ramas por bounded context" width="900">
-</div>
-
-*Network graph mostrando las ramas por bounded context: cada carril representa un bounded context (iam, property, consumption, savings, incident) y los nodos cuadrados indican los merges a `main` vía Pull Request.*
+- `![network-graph](./images/network-graph.png)` — Network graph mostrando las ramas por bounded context.
 
 > Recomendación para completar las evidencias: dado que las ramas de bounded context aún no están integradas a `main`, la vista de *Contributors* del backend puede mostrar pocos autores hasta que se realicen los merges. Conviene consolidar las ramas vía Pull Requests antes de generar las capturas de analíticos, de modo que la contribución de todos los integrantes quede reflejada en la rama principal.
 
