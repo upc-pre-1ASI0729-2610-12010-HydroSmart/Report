@@ -586,6 +586,303 @@ Durante el Sprint 2, nuestra colaboración se centró principalmente en la actua
 
 ### Contribuciones al desarrollo del Documento:
 
+### 5.2.3. Sprint 3
+
+Durante el Sprint 3 se llevó a cabo la construcción del **backend real** de la plataforma HydroSmart, dejando atrás la simulación de datos basada en `db.json` que se utilizó en el Sprint 2. El equipo desarrolló una **API REST en Spring Boot (Java 21) conectada a una base de datos MySQL**, organizada bajo una arquitectura **Domain-Driven Design (DDD)** dividida en bounded contexts (IAM, Consumption, Incident, Property y Savings). Se implementó autenticación y autorización mediante **JWT** con control de roles (`BUILDING_ADMIN` y `TENANT`), y se documentaron todos los endpoints con **OpenAPI/Swagger**.
+
+En paralelo, se actualizó la **aplicación web en Angular** para **consumir el backend real** en reemplazo de la fuente de datos simulada, incorporando un interceptor HTTP que adjunta el token JWT, guards de ruta por autenticación y por rol, y servicios HTTP por bounded context. Como resultado, se obtuvo una versión integrada de extremo a extremo (frontend ↔ backend ↔ base de datos) que permite iniciar sesión, visualizar el consumo de agua, gestionar dispositivos/sensores, administrar unidades e inquilinos, revisar alertas y consultar metas de ahorro y reportes mensuales.
+
+#### 5.2.3.1. Sprint Planning 3.
+
+En esta sección se especifican los aspectos principales del Sprint Planning Meeting del Sprint 3. La reunión tuvo como objetivo definir el alcance de la migración hacia un backend real con persistencia en MySQL, repartir los bounded contexts entre los integrantes y planificar la integración del frontend Angular con la nueva API.
+
+| **Sprint #** | Sprint 3 |
+|---|---|
+| **Sprint Planning Background** | |
+| **Fecha** | 10/06/2026 |
+| **Hora** | 6:00 PM |
+| **Ubicación** | Reunión virtual vía Zoom |
+| **Preparado por** | Hancco Poma, Keyner Iván |
+| **Participantes (reunión de planificación)** | - Oscar Fernando Vara Velasquez <br> - Victor Manuel Espino Rossi <br> - Hernán Gabriel Huayta Fuentes <br> - Braden Raid García Cerpa <br> - Keyner Iván Hancco Poma |
+| **Sprint 2 Review Summary** | En el Sprint 2 se consolidó la estructura principal del frontend de AquaPulse/HydroSmart en Angular, con las pantallas de Dashboard, Profile, Settings, Devices y Reports funcionando sobre una base de datos simulada (`db.json`) y soporte multilenguaje (i18n EN/ES). Se logró una versión visual estable y navegable, pero el Product Owner y el equipo identificaron como principal limitación la ausencia de un backend real: los datos no se persistían y no existía autenticación ni control de acceso. El feedback fue avanzar hacia una API real con seguridad y persistencia. |
+| **Sprint 2 Retrospective Summary** | El equipo valoró positivamente la organización por bounded contexts y el uso de ramas por funcionalidad, que facilitó el trabajo en paralelo durante el Sprint 2. Como oportunidades de mejora se señalaron: estandarizar los mensajes de commit (algunos quedaron como `docs:`/`chore:` poco descriptivos), reducir la duplicación de datos hardcodeados y preparar la arquitectura para sustituir el mock por servicios HTTP reales. Estas mejoras se incorporaron en la planificación del Sprint 3. |
+| **Sprint 3 Goal** | *Our focus is on* entregar un backend REST real y seguro para HydroSmart, conectado a MySQL, que reemplace la simulación de datos del sprint anterior. <br> *We believe it delivers* persistencia real de la información, autenticación con roles y una API documentada a los administradores de edificio y a los inquilinos de la plataforma, además de una base sólida sobre la cual el equipo de desarrollo pueda seguir construyendo. <br> *This will be confirmed when* un usuario puede iniciar sesión con credenciales reales, la aplicación Angular muestra y actualiza datos provenientes del backend (sensores, lecturas de consumo, unidades, inquilinos, alertas, metas de ahorro y reportes) sin usar datos simulados, y todos los endpoints son verificables desde Swagger UI. |
+| **Sprint 3 Velocity** | 31 Story Points |
+| **Sum of Story Points** | 40 |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+
+Para cada aspecto se designó un **Líder (L)**, responsable de la dirección técnica e implementación principal, y **Colaboradores (C)**, encargados de apoyar en el desarrollo, la integración y la validación. La distribución se corresponde directamente con la rama de trabajo y los commits realizados por cada integrante en el repositorio de backend.
+
+La Matriz LACX (Leadership and Collaboration Matrix) permite visualizar la distribución de responsabilidades, garantizando la trazabilidad y la efectividad del trabajo colaborativo del Sprint 3.
+
+| Team Member (LastName, FirstName) | GitHub Username | IAM / Auth | Consumption | Incident | Property | Savings | Frontend Integration |
+|---|---|---|---|---|---|---|---|
+| Vara, Oscar | varometro159 | **L** | C | C | C | C | **L** |
+| Espino, Victor | Vmer140 | C | **L** | C | C | C | C |
+| Huayta, Hernán | Homesman | C | C | **L** | C | C | C |
+| Hancco, Keyner | 1Kanan2 | C | C | C | **L** | C | C |
+| García, Braden | BradenGarcia | C | C | C | C | **L** | C |
+
+#### 5.2.3.3. Sprint Backlog 3.
+
+El Sprint Backlog 3 se orienta a la construcción del backend REST de HydroSmart y a su integración con la aplicación web. El objetivo principal fue implementar, por cada bounded context, el modelo de dominio, la lógica de negocio (command services), la persistencia en MySQL mediante JPA y los endpoints REST con seguridad por roles, para luego conectar la interfaz Angular y eliminar la dependencia de los datos simulados.
+
+A continuación se presenta el **tablero del Sprint 3** en la herramienta de control del equipo, junto con su URL pública:
+
+#### 5.2.3.3. Sprint Backlog 3
+ 
+El presente Sprint Backlog se enfoca en construir el backend real de la plataforma HydroSmart y conectarlo con la aplicación web, reemplazando la fuente de datos simulada (`db.json`) utilizada en el Sprint 2. En este sprint, el objetivo principal es implementar una API REST en Spring Boot conectada a una base de datos MySQL, organizada bajo una arquitectura Domain-Driven Design (DDD) en bounded contexts, con autenticación y autorización mediante JWT y control de acceso por roles.
+ 
+Asimismo, se priorizó el desarrollo, por cada bounded context, del modelo de dominio (aggregates y value objects), la lógica de negocio (command services), la persistencia en MySQL mediante JPA y la exposición de endpoints REST documentados con OpenAPI/Swagger. Finalmente, se integró la interfaz Angular para consumir la API real mediante servicios HTTP, un interceptor que adjunta el token JWT y guards de ruta por autenticación y rol, logrando una versión funcional de extremo a extremo.
+ 
+A continuación, se presenta la tabla de control del Sprint 3, donde se detallan las historias de usuario trabajadas, junto con sus respectivas tareas (Work Items), descripciones funcionales, estimaciones de tiempo, responsables asignados y el estado actual de cada actividad.
+ 
+<table>
+ <tr>
+ <th colspan="7">Sprint 3 – Work Items / Tasks (HydroSmart)</th>
+ </tr>
+ <tr>
+ <th>User Story ID</th>
+ <th>Task ID</th>
+ <th>Title</th>
+ <th>Description</th>
+ <th>Estimation</th>
+ <th>Assigned To</th>
+ <th>Status</th>
+ </tr>
+ <!-- EP01 -->
+ <tr><td colspan="7"><b>EP01 – Autenticación y Seguridad (IAM)</b></td></tr>
+ <tr><td>US01</td><td>UT01</td><td>Configurar esqueleto del backend</td><td>Crear la estructura base en Spring Boot con arquitectura DDD, además de la configuración de seguridad y CORS.</td><td>4h</td><td>Oscar Vara</td><td>Done</td></tr>
+ <tr><td></td><td>UT02</td><td>Implementar login con JWT</td><td>Desarrollar el endpoint POST /api/auth/login con la generación del token JWT.</td><td>3h</td><td>Oscar Vara</td><td>Done</td></tr>
+ <tr><td></td><td>UT03</td><td>Gestionar usuarios y roles</td><td>Modelar el aggregate User con roles BUILDING_ADMIN/TENANT y exponer el endpoint GET /api/auth/me.</td><td>3h</td><td>Oscar Vara</td><td>Done</td></tr>
+ <tr><td></td><td>UT04</td><td>Configurar filtro y utilidades JWT</td><td>Implementar JwtAuthFilter, JwtUtil y UserDetailsServiceImpl para validar el token en cada petición.</td><td>3h</td><td>Oscar Vara</td><td>Done</td></tr>
+ <!-- EP02 -->
+ <tr><td colspan="7"><b>EP02 – Monitoreo y Análisis de Consumo (Consumption)</b></td></tr>
+ <tr><td>US05</td><td>UT05</td><td>Modelar dominio de consumo</td><td>Crear los aggregates Sensor y ConsumptionReading con sus value objects y persistencia JPA.</td><td>4h</td><td>Victor Espino</td><td>Done</td></tr>
+ <tr><td></td><td>UT06</td><td>Implementar endpoints de sensores</td><td>Desarrollar el CRUD de sensores, la actualización de estado y de preferencias.</td><td>4h</td><td>Victor Espino</td><td>Done</td></tr>
+ <tr><td>US06</td><td>UT07</td><td>Implementar endpoints de lecturas</td><td>Exponer lecturas por sensor y por edificio con filtro por rango de fechas.</td><td>3h</td><td>Victor Espino</td><td>Done</td></tr>
+ <tr><td></td><td>UT08</td><td>Generar resumen de consumo</td><td>Implementar la lógica de buildSummary para alimentar el dashboard.</td><td>3h</td><td>Victor Espino</td><td>Done</td></tr>
+ <!-- EP03 -->
+ <tr><td colspan="7"><b>EP03 – Detección de Incidentes y Alertas (Incident)</b></td></tr>
+ <tr><td>US08</td><td>UT09</td><td>Modelar dominio de incidentes</td><td>Crear el aggregate Alert y los value objects del bounded context Incident.</td><td>3h</td><td>Hernán Huayta</td><td>Done</td></tr>
+ <tr><td></td><td>UT10</td><td>Implementar endpoints de alertas</td><td>Listar alertas por edificio/unidad, con filtro opcional por estado.</td><td>3h</td><td>Hernán Huayta</td><td>Done</td></tr>
+ <tr><td>US09</td><td>UT11</td><td>Resolver alertas</td><td>Endpoint para marcar una alerta como resuelta (acceso BUILDING_ADMIN).</td><td>2h</td><td>Hernán Huayta</td><td>Done</td></tr>
+ <!-- EP04 -->
+ <tr><td colspan="7"><b>EP04 – Gestión de Propiedades e Inquilinos (Property)</b></td></tr>
+ <tr><td>US17</td><td>UT12</td><td>Modelar dominio de propiedad</td><td>Crear los aggregates Building y Unit con su persistencia JPA.</td><td>4h</td><td>Keyner Hancco</td><td>Done</td></tr>
+ <tr><td></td><td>UT13</td><td>Implementar endpoints de edificios y unidades</td><td>Exponer la consulta de edificios/unidades y sus resúmenes de consumo.</td><td>3h</td><td>Keyner Hancco</td><td>Done</td></tr>
+ <tr><td>US18</td><td>UT14</td><td>Gestionar inquilinos</td><td>Endpoints para asignar inquilino a una unidad, consultarlo y removerlo.</td><td>3h</td><td>Keyner Hancco</td><td>Done</td></tr>
+ <!-- EP05 -->
+ <tr><td colspan="7"><b>EP05 – Optimización y Reportes de Ahorro (Savings)</b></td></tr>
+ <tr><td>US07</td><td>UT15</td><td>Modelar dominio de ahorro</td><td>Crear el aggregate SavingGoal y su persistencia.</td><td>3h</td><td>Braden García</td><td>Done</td></tr>
+ <tr><td></td><td>UT16</td><td>Implementar meta de ahorro activa</td><td>Endpoint GET /api/saving-goals/active por edificio.</td><td>2h</td><td>Braden García</td><td>Done</td></tr>
+ <tr><td>US19</td><td>UT17</td><td>Generar reporte mensual</td><td>Endpoint GET /api/reports/monthly por edificio y periodo.</td><td>3h</td><td>Braden García</td><td>Done</td></tr>
+ <!-- EP06 -->
+ <tr><td colspan="7"><b>EP06 – Integración Frontend–Backend</b></td></tr>
+ <tr><td>US20</td><td>UT18</td><td>Conectar servicios HTTP</td><td>Reemplazar db.json por HttpClient consumiendo la API real en cada bounded context.</td><td>4h</td><td>Oscar Vara</td><td>Done</td></tr>
+ <tr><td></td><td>UT19</td><td>Implementar interceptor y guards</td><td>Configurar authInterceptor (Bearer token), authGuard y roleGuard para el control de acceso.</td><td>3h</td><td>Oscar Vara</td><td>Done</td></tr>
+ <tr><td></td><td>UT20</td><td>Corregir filtrado por unidad</td><td>Fixes de filtrado de datos por unidad y alineación de IDs entre frontend y backend.</td><td>3h</td><td>Oscar Vara</td><td>Done</td></tr>
+</table>
+
+A continuación, la tabla de control de estado del Sprint 3, con las User Stories, sus tareas (Work Items), descripciones, estimaciones, responsables y estado.
+
+> Nota: Los identificadores de User Story (US) deben alinearse con el Product Backlog oficial del equipo; las estimaciones en horas son referenciales y reflejan el esfuerzo de implementación realizado. El responsable de cada tarea coincide con el autor de los commits del bounded context correspondiente.
+
+| User Story ID | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US-IAM01 | Autenticación de usuarios | T01 | Configurar esqueleto del proyecto | Crear estructura base Spring Boot + DDD, configuración de seguridad y CORS. | 4 | Oscar Vara | Done |
+| US-IAM01 | | T02 | Implementar login con JWT | Endpoint `POST /api/auth/login` con generación de token JWT. | 3 | Oscar Vara | Done |
+| US-IAM01 | | T03 | Gestión de usuarios y roles | Aggregate `User`, roles `BUILDING_ADMIN`/`TENANT` y endpoint `GET /api/auth/me`. | 3 | Oscar Vara | Done |
+| US-IAM01 | | T04 | Filtro y utilidades JWT | `JwtAuthFilter`, `JwtUtil` y `UserDetailsServiceImpl` para validar tokens. | 3 | Oscar Vara | Done |
+| US-CON01 | Monitoreo del consumo de agua | T05 | Modelar dominio de consumo | Aggregates `Sensor` y `ConsumptionReading` con sus value objects. | 4 | Victor Espino | Done |
+| US-CON01 | | T06 | Endpoints de sensores | CRUD de sensores, actualización de estado y preferencias. | 4 | Victor Espino | Done |
+| US-CON02 | Historial y lecturas de consumo | T07 | Endpoints de lecturas | Lecturas por sensor y por edificio con filtro por rango de fechas. | 3 | Victor Espino | Done |
+| US-CON02 | | T08 | Resumen de consumo | Lógica de `buildSummary` para el dashboard. | 3 | Victor Espino | Done |
+| US-INC01 | Detección de incidentes y alertas | T09 | Modelar dominio de incidentes | Aggregate `Alert` y value objects del bounded context Incident. | 3 | Hernán Huayta | Done |
+| US-INC01 | | T10 | Endpoints de alertas | Listado de alertas por edificio/unidad y resolución de alertas. | 3 | Hernán Huayta | Done |
+| US-PRO01 | Gestión de edificios y unidades | T11 | Modelar dominio de propiedad | Aggregates `Building` y `Unit` con persistencia JPA. | 4 | Keyner Hancco | Done |
+| US-PRO01 | | T12 | Endpoints de unidades y resúmenes | Consulta de edificios/unidades y resúmenes de consumo. | 3 | Keyner Hancco | Done |
+| US-PRO02 | Gestión de inquilinos | T13 | Asignar/quitar inquilino | Endpoints para asignar inquilino a una unidad y removerlo. | 3 | Keyner Hancco | Done |
+| US-SAV01 | Metas de ahorro | T14 | Modelar dominio de ahorro | Aggregate `SavingGoal` y su persistencia. | 3 | Braden García | Done |
+| US-SAV01 | | T15 | Endpoint de meta activa | `GET /api/saving-goals/active` por edificio. | 2 | Braden García | Done |
+| US-SAV02 | Reportes mensuales | T16 | Endpoint de reporte mensual | `GET /api/reports/monthly` por edificio y periodo. | 3 | Braden García | Done |
+| US-INT01 | Integración Frontend–Backend | T17 | Servicios HTTP por contexto | Reemplazar `db.json` por `HttpClient` consumiendo la API real. | 4 | Oscar Vara | Done |
+| US-INT01 | | T18 | Interceptor y guards | `authInterceptor` (Bearer token), `authGuard` y `roleGuard`. | 3 | Oscar Vara | Done |
+| US-INT01 | | T19 | Fixes de filtrado por unidad | Correcciones de filtrado de datos por unidad y alineación de IDs. | 3 | Oscar Vara | Done |
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+En esta sección se presentan los commits relacionados con los principales avances de implementación del Sprint 3. El backend se organizó con una rama por bounded context (`Consumption`, `feature/incident-context`, `feature/property`, `savings`), mientras que el esqueleto del proyecto y el contexto de IAM se consolidaron en `main`. En el frontend, el trabajo del Sprint 3 corresponde a la conexión de la aplicación Angular con el backend real.
+
+**Repositorio Backend:** https://github.com/upc-pre-1ASI0729-2610-12010-HydroSmart/HydroSmart-backend
+
+| Repository | Branch | Commit Id | Commit Message | Author | Committed on (Date) |
+|---|---|---|---|---|---|
+| HydroSmart-backend | main | 345914d | feat: skeleton + IAM bounded context (auth, JWT, users) | Oscar Vara | 20/06/2026 |
+| HydroSmart-backend | Consumption | 9c36e74 | chore: scaffold consumption bounded context structure | Victor Espino | 20/06/2026 |
+| HydroSmart-backend | Consumption | b520525 | feat: consumption bounded context | Victor Espino | 20/06/2026 |
+| HydroSmart-backend | feature/incident-context | fdc9c33 | feat: incident bounded context (alerts) | Hernán Huayta | 20/06/2026 |
+| HydroSmart-backend | feature/property | ca9ff73 | feat: property bounded context (buildings, units) | Keyner Hancco | 20/06/2026 |
+| HydroSmart-backend | savings | cb5709a | feat: savings bounded context | Braden García | 20/06/2026 |
+
+**Repositorio Frontend:** https://github.com/upc-pre-1ASI0729-2610-12010-HydroSmart/HydroSmart-front
+
+| Repository | Branch | Commit Id | Commit Message | Author | Committed on (Date) |
+|---|---|---|---|---|---|
+| HydroSmart-front | main | 0f72a4c | feat: frontend completo conectado al backend con fixes de filtrado por unidad | Oscar Vara | 20/06/2026 |
+| HydroSmart-front | main | 86b2cda | merge: reemplazar frontend con versión actualizada conectada al backend | Oscar Vara | 20/06/2026 |
+| HydroSmart-front | main | 0d5a8f4 | chore: actualizar configuración de gitignore | Oscar Vara | 20/06/2026 |
+| HydroSmart-front | main | ee1e189 | chore: actualizar configuración de gitignore | Oscar Vara | 20/06/2026 |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 3, el equipo logró integrar la aplicación HydroSmart de extremo a extremo, con la interfaz Angular consumiendo datos reales desde la API REST en Spring Boot conectada a MySQL. La aplicación arranca en `http://localhost:4200` (frontend) y consume el backend en `http://localhost:8080/api`. Se implementaron y validaron las siguientes vistas y flujos:
+
+- **Login (`/login`):** Inicio de sesión con credenciales reales; el backend valida y devuelve un JWT que se almacena en `sessionStorage` y se adjunta automáticamente en cada petición.
+- **Dashboard (`/dashboard`):** Visualización del consumo de agua mediante gráficos (Chart.js), con datos provenientes del bounded context de Consumption.
+- **Devices (`/devices`):** Gestión de sensores/dispositivos (listado, creación y actualización de estado y preferencias).
+- **Units (`/units`, solo `BUILDING_ADMIN`):** Administración de unidades del edificio y asignación/remoción de inquilinos.
+- **Reports (`/reports`):** Consulta de reportes y lecturas de consumo por rango de fechas.
+- **Settings (`/settings`, solo `BUILDING_ADMIN`):** Configuración asociada a metas de ahorro.
+- **Profile (`/profile`):** Información del usuario autenticado (obtenida desde `GET /api/auth/me`).
+- **Notifications:** Visualización de alertas/incidentes generados por el bounded context de Incident.
+
+El control de acceso se aplica con `authGuard` (rutas que requieren sesión) y `roleGuard` (rutas exclusivas de `BUILDING_ADMIN`, como Units y Settings), de modo que un inquilino (`TENANT`) y un administrador ven experiencias diferenciadas.
+
+**Credenciales de prueba (sembradas por `DataSeeder`):**
+- Administrador de edificio: `admin@begonias.com.pe` / `admin123` (rol `BUILDING_ADMIN`)
+- Inquilino: cuentas con contraseña `tenant123` (rol `TENANT`)
+
+**Capturas de las vistas implementadas:**
+
+`⚠️ FALTANTE: insertar los screenshots de cada vista en ejecución (consumiendo el backend real). Sugeridas:`
+- `![execution-login](./images/execution-login.png)`
+- `![execution-dashboard](./images/execution-dashboard.png)`
+- `![execution-devices](./images/execution-devices.png)`
+- `![execution-units](./images/execution-units.png)`
+- `![execution-reports](./images/execution-reports.png)`
+- `![execution-settings](./images/execution-settings.png)`
+- `![execution-profile](./images/execution-profile.png)`
+
+**Video de demostración:**
+
+`⚠️ FALTANTE: insertar el enlace al video que ilustre y explique la navegación y el funcionamiento del Sprint 3 (login → dashboard → gestión de unidades/sensores → alertas → reportes), mostrando los datos provenientes del backend.`
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 3 se construyó e implementó el backend de HydroSmart con **Spring Boot 3.5.x (Java 21)**, persistencia en **MySQL** mediante **Spring Data JPA**, seguridad con **Spring Security + JWT** (jjwt) y documentación de la API con **springdoc-openapi (Swagger UI)**.
+
+**Estado actual:**
+- Se desarrolló el backend bajo arquitectura DDD con cinco bounded contexts (IAM, Consumption, Incident, Property, Savings) y un módulo `shared` para configuración, seguridad y utilidades transversales.
+- Se implementó autenticación y autorización con JWT y control de acceso por roles (`BUILDING_ADMIN`, `TENANT`) usando `@PreAuthorize`.
+- Se expusieron los endpoints REST principales para usuarios, sensores, lecturas de consumo, edificios, unidades, inquilinos, alertas, metas de ahorro y reportes.
+- La API quedó documentada y probada con **Swagger UI** (`/swagger-ui.html`; especificación en `/api-docs`), validando las operaciones contra datos sembrados por `DataSeeder`.
+
+**URL local de la documentación (Swagger UI):** `http://localhost:8080/swagger-ui.html`
+
+A continuación, la relación de endpoints documentados por bounded context.
+
+**Endpoints de Authentication (IAM)**
+
+| Endpoint | Acción | Verbo HTTP | Parámetros |
+|---|---|---|---|
+| /api/auth/login | Iniciar sesión | POST | body: email, password |
+| /api/auth/me | Obtener usuario autenticado | GET | header: Authorization (Bearer JWT) |
+
+**Endpoints de Consumption**
+
+| Endpoint | Acción | Verbo HTTP | Parámetros |
+|---|---|---|---|
+| /api/sensors | Listar sensores | GET | query: buildingId o unitId |
+| /api/sensors | Crear sensor (BUILDING_ADMIN) | POST | body: name, type, location, unitId |
+| /api/sensors/{id}/preferences | Actualizar preferencias (BUILDING_ADMIN) | PUT | path: id; body: preferences |
+| /api/sensors/{id}/status | Actualizar estado (BUILDING_ADMIN) | PUT | path: id; body: status |
+| /api/sensors/{id}/readings | Lecturas por sensor | GET | path: id; query: from, to (opcional) |
+| /api/buildings/{id}/readings | Lecturas por edificio (BUILDING_ADMIN) | GET | path: id; query: from, to (opcional) |
+
+**Endpoints de Incident**
+
+| Endpoint | Acción | Verbo HTTP | Parámetros |
+|---|---|---|---|
+| /api/alerts | Listar alertas | GET | query: buildingId o unitId, status (opcional) |
+| /api/alerts/{id}/resolve | Resolver alerta (BUILDING_ADMIN) | PUT | path: id |
+
+**Endpoints de Property**
+
+| Endpoint | Acción | Verbo HTTP | Parámetros |
+|---|---|---|---|
+| /api/buildings/{id} | Obtener edificio (BUILDING_ADMIN) | GET | path: id |
+| /api/buildings/{id}/summary | Resumen de consumo del edificio (BUILDING_ADMIN) | GET | path: id |
+| /api/units | Listar unidades (BUILDING_ADMIN) | GET | query: buildingId |
+| /api/units/{id} | Obtener unidad | GET | path: id |
+| /api/units/{id}/summary | Resumen de consumo de la unidad | GET | path: id |
+| /api/units/{id}/tenant | Obtener inquilino de la unidad (BUILDING_ADMIN) | GET | path: id |
+| /api/units/{id}/assign-tenant | Asignar inquilino (BUILDING_ADMIN) | POST | path: id; body: name, lastName, email, phone, password |
+| /api/units/{id}/tenant | Remover inquilino (BUILDING_ADMIN) | DELETE | path: id |
+
+**Endpoints de Savings**
+
+| Endpoint | Acción | Verbo HTTP | Parámetros |
+|---|---|---|---|
+| /api/saving-goals/active | Obtener meta de ahorro activa | GET | query: buildingId |
+| /api/reports/monthly | Obtener reporte mensual (BUILDING_ADMIN) | GET | query: buildingId, period |
+
+**Capturas de la documentación (Swagger UI):**
+
+`⚠️ FALTANTE: insertar capturas de la interacción con Swagger UI usando datos de muestra (p. ej. login obteniendo el token, ejecución de GET /api/sensors, GET /api/units, etc.). Ej.: ![swagger-auth](./images/swagger-auth.png), ![swagger-sensors](./images/swagger-sensors.png)`
+
+**Commits relacionados con la documentación de Web Services:** la documentación se generó automáticamente con springdoc-openapi a partir de la implementación de cada bounded context; los commits asociados son los listados en la sección 5.2.3.4 (repositorio HydroSmart-backend).
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 3 el equipo configuró el entorno de ejecución **local e integrado** del sistema completo: backend Spring Boot + base de datos MySQL + frontend Angular.
+
+- **Base de datos:** MySQL local (`hydrosmart_db`), creada automáticamente con `createDatabaseIfNotExist=true` y poblada en cada arranque por `DataSeeder` con usuarios, edificios, unidades, sensores, lecturas, alertas y metas de ahorro de muestra.
+- **Backend:** Aplicación Spring Boot ejecutándose en `http://localhost:8080`, con CORS configurado para el frontend, seguridad JWT y Swagger UI disponible en `/swagger-ui.html`.
+- **Frontend:** Aplicación Angular ejecutándose en `http://localhost:4200` (`ng serve`), apuntando al backend mediante `environment.apiUrl = 'http://localhost:8080/api'`.
+
+> Estado del despliegue en la nube: en este Sprint la integración se validó en entorno **local**. **Aún no se configuró un despliegue en proveedor cloud** para el backend ni una base de datos administrada. Como trabajo siguiente se recomienda desplegar el backend (p. ej. Render/Railway) con una instancia MySQL administrada, actualizar `environment.production` con la URL pública de la API y redeplegar el frontend (Netlify) apuntando a dicha API.
+
+`⚠️ FALTANTE: si se realizó algún despliegue en la nube, insertar capturas y URLs (proveedor, configuración del servicio, base de datos administrada, variables de entorno). Si solo se ejecutó en local, incluir capturas del backend corriendo (consola/Swagger) y del frontend conectado. Ej.: ![deploy-backend-local](./images/deploy-backend-local.png)`
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 3, la colaboración del equipo se centró en la construcción del backend REST y su integración con la aplicación web. El trabajo se gestionó mediante **GitHub**, utilizando **una rama por bounded context** en el repositorio de backend y commits estandarizados con convención `feat:`/`chore:`, lo que permitió desarrollar en paralelo y mantener la trazabilidad por responsable.
+
+Resumen de contribuciones por integrante (según commits del Sprint 3):
+
+- **Oscar Vara (varometro159):** Esqueleto del proyecto, configuración de seguridad/CORS y bounded context de **IAM** (autenticación, JWT, usuarios y roles). Adicionalmente, lideró la **integración del frontend Angular con el backend**, reemplazando `db.json` por servicios HTTP reales, e implementando el interceptor de autenticación y los fixes de filtrado por unidad.
+- **Victor Espino (Vmer140):** Bounded context de **Consumption** (aggregates `Sensor` y `ConsumptionReading`, endpoints de sensores, lecturas y resúmenes de consumo).
+- **Hernán Huayta (Homesman):** Bounded context de **Incident** (aggregate `Alert`, listado y resolución de alertas).
+- **Keyner Hancco (1Kanan2):** Bounded context de **Property** (aggregates `Building` y `Unit`, endpoints de edificios, unidades, resúmenes y gestión de inquilinos).
+- **Braden García (BradenGarcia):** Bounded context de **Savings** (aggregate `SavingGoal`, meta de ahorro activa y reporte mensual).
+
+**Analíticos de colaboración de GitHub:**
+
+<div>
+<img src="images/insights-contributors-sprint3.png" alt="Impact Mapping" width="800">
+</div>
+
+<div>
+<img src="images/insights-commits-sprint3-1.png" alt="Impact Mapping" width="800">
+</div>
+
+<div>
+<img src="images/insights-commits-sprint3-2.png" alt="Impact Mapping" width="800">
+</div>
+
+<div>
+<img src="images/insights-commits-sprint3-3.png" alt="Impact Mapping" width="800">
+</div>
+
+<div>
+<img src="images/insights-commits-sprint3-4.png" alt="Impact Mapping" width="800">
+</div>
+
+- `![network-graph](./images/network-graph.png)` — Network graph mostrando las ramas por bounded context.
+
+> Recomendación para completar las evidencias: dado que las ramas de bounded context aún no están integradas a `main`, la vista de *Contributors* del backend puede mostrar pocos autores hasta que se realicen los merges. Conviene consolidar las ramas vía Pull Requests antes de generar las capturas de analíticos, de modo que la contribución de todos los integrantes quede reflejada en la rama principal.
 
 
 ## 5.3. Validation Interviews
