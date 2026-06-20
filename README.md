@@ -592,6 +592,169 @@ Durante el Sprint 2, nuestra colaboración se centró principalmente en la actua
 
 
 
+## 5.3. Validation Interviews
+
+### 5.3.3. Evaluaciones según heurísticas
+
+UX Heuristics & Principles Evaluation
+Usability – Inclusive Design – Information Architecture
+
+**CARRERA:** Ingeniería de Software
+
+**CURSO:** Desarrollo de Aplicaciones Open Source
+
+**NRC:** 12010
+
+**PROFESOR:** Ivan Robles Fernández
+
+**SITE o APP A EVALUAR:** AquaPulse (HydroSmart)
+
+**TAREAS A EVALUAR:**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+Segmento Objetivo #1: Propietarios de viviendas con áreas verdes
+- Visualizar el consumo de agua en tiempo real desde el dashboard.
+- Gestionar los dispositivos de medición instalados en el hogar.
+- Consultar el historial de consumo y los reportes generados.
+- Configurar las preferencias de notificaciones y privacidad.
+
+Segmento Objetivo #2: Estudiantes y jóvenes arrendatarios
+- Visualizar el consumo compartido del hogar desde el dashboard.
+- Editar la información del perfil de usuario.
+- Consultar las alertas y notificaciones de consumo inusual.
+- Acceder a las metas de ahorro y recomendaciones.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+- Registro e inicio de sesión (gestión de autenticación).
+- Administración de propiedades e inquilinos por parte del arrendador.
+- Generación y exportación de reportes personalizados.
+
+**ESCALA DE SEVERIDAD:**
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|---|---|---|
+| 1 | Las tarjetas de resumen del dashboard no permiten acceder al detalle del consumo. | 3 | Information Architecture: Is it usable? |
+| 2 | No existe un acceso directo a los dispositivos desde el dashboard. | 3 | Information Architecture: Is it usable? |
+| 3 | Las notificaciones de consumo inusual no enlazan con la sección afectada. | 3 | Information Architecture: Is it findable? |
+| 4 | Los campos del perfil no validan el tipo de dato ingresado. | 4 | Prevención de errores. |
+| 5 | El sistema de medición de unidades de consumo no es consistente entre vistas. | 2 | Consistencia y estándares. |
+| 6 | No existe ayuda contextual para interpretar las métricas y gráficos. | 2 | Ayuda y documentación. |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** Las tarjetas de resumen del dashboard no permiten acceder al detalle del consumo.
+
+**SEVERIDAD:** 3
+**HEURÍSTICA VIOLADA:** Information Architecture: Is it usable?
+
+**Problema:**
+En la pantalla del dashboard, se presentan tarjetas con métricas clave como el consumo total, el consumo promedio y el comparativo respecto al periodo anterior. El diseño visual de estas tarjetas invita al usuario a hacer clic esperando ver un desglose detallado, sin embargo, al hacerlo no se redirige al usuario a la vista de reportes ni se muestra información adicional, obligándolo a navegar manualmente por el menú lateral.
+
+<div align="center">
+    <img src="./images/execution-dashboard.png" alt="Problema 1 - Dashboard" width="600">
+</div>
+
+**Recomendación:**
+Convertir las tarjetas de métricas en elementos interactivos que, al hacer clic, redirijan al usuario directamente a la sección de reportes con el filtro correspondiente aplicado.
+
+---
+
+**PROBLEMA #2:** No existe un acceso directo a los dispositivos desde el dashboard.
+
+**SEVERIDAD:** 3
+**HEURÍSTICA VIOLADA:** Information Architecture: Is it usable?
+
+**Problema:**
+En la pantalla del dashboard se muestra un resumen del estado de los dispositivos conectados (por ejemplo, medidores activos e inactivos), pero no existe un enlace o botón que permita acceder de forma directa a la pantalla de gestión de dispositivos. El usuario debe regresar al menú lateral y buscar manualmente la opción “Devices”, lo que incrementa el número de pasos para completar la tarea.
+
+<div align="center">
+    <img src="./images/execution-devices.png" alt="Problema 2 - Devices" width="600">
+</div>
+
+**Recomendación:**
+Añadir un botón de acceso rápido o un enlace dentro de la tarjeta de dispositivos del dashboard que lleve directamente a la vista de gestión de dispositivos.
+
+---
+
+**PROBLEMA #3:** Las notificaciones de consumo inusual no enlazan con la sección afectada.
+
+**SEVERIDAD:** 3
+**HEURÍSTICA VIOLADA:** Information Architecture: Is it findable?
+
+**Problema:**
+Cuando el sistema detecta un consumo inusual o una posible fuga, se genera una notificación en el panel de alertas. Sin embargo, al seleccionar la notificación, esta no redirige al usuario a la pantalla de reportes o al dispositivo relacionado, por lo que el usuario debe buscar manualmente el origen del problema, lo que retrasa la atención de la alerta.
+
+<div align="center">
+    <img src="./images/execution-dashboard-notifications.png" alt="Problema 3 - Notifications" width="600">
+</div>
+
+**Recomendación:**
+Incluir un enlace dentro de cada notificación que lleve directamente al detalle del dispositivo o reporte relacionado con la alerta detectada.
+
+---
+
+**PROBLEMA #4:** Los campos del perfil no validan el tipo de dato ingresado.
+
+**SEVERIDAD:** 4
+**HEURÍSTICA VIOLADA:** Prevención de errores.
+
+**Problema:**
+En la pantalla de edición de perfil, campos como el número de teléfono o el correo electrónico aceptan cualquier tipo de dato sin realizar una validación previa. No se muestran advertencias ni se impide el guardado de información con formato incorrecto, lo que puede generar inconsistencias en los datos del usuario y dificultar futuras comunicaciones o procesos de recuperación de cuenta.
+
+<div align="center">
+    <img src="./images/execution-profile.png" alt="Problema 4 - Profile" width="600">
+</div>
+
+**Recomendación:**
+Implementar validación en tiempo real de los campos (formato de correo, longitud y tipo numérico del teléfono) e impedir el guardado mientras los datos no cumplan con el formato esperado, mostrando mensajes de error claros.
+
+---
+
+**PROBLEMA #5:** El sistema de medición de unidades de consumo no es consistente entre vistas.
+
+**SEVERIDAD:** 2
+**HEURÍSTICA VIOLADA:** Consistencia y estándares.
+
+**Problema:**
+En el dashboard el consumo se presenta en litros, mientras que en la pantalla de reportes algunas métricas se muestran en metros cúbicos (m³) sin una conversión explícita. Esta inconsistencia puede confundir al usuario al comparar valores entre distintas vistas y dificulta la interpretación del ahorro real.
+
+<div align="center">
+    <img src="./images/execution-reports.png" alt="Problema 5 - Reports" width="600">
+</div>
+
+**Recomendación:**
+Estandarizar la unidad de medida en todas las vistas o incluir un conversor visible que permita al usuario alternar entre litros y metros cúbicos de forma consistente.
+
+---
+
+**PROBLEMA #6:** No existe ayuda contextual para interpretar las métricas y gráficos.
+
+**SEVERIDAD:** 2
+**HEURÍSTICA VIOLADA:** Ayuda y documentación.
+
+**Problema:**
+En las pantallas de dashboard y reportes se presentan métricas y gráficos (como el comparativo de consumo o el porcentaje de ahorro) sin una explicación de qué significan ni cómo se calculan. Para usuarios menos familiarizados con la tecnología, esto dificulta la comprensión del valor entregado por la aplicación y reduce la utilidad percibida de la información.
+
+<div align="center">
+    <img src="./images/execution-settings.png" alt="Problema 6 - Settings" width="600">
+</div>
+
+**Recomendación:**
+Añadir tooltips o iconos de ayuda junto a cada métrica y gráfico, y contemplar una sección de ayuda o FAQ accesible desde el menú de configuración.
+
+---
+
 # Conclusiones y Recomendaciones
 
 ## Conclusiones
