@@ -2743,6 +2743,29 @@ En las pantallas de dashboard y reportes se presentan métricas y gráficos (com
 **Recomendación:**
 Añadir tooltips o iconos de ayuda junto a cada métrica y gráfico, y contemplar una sección de ayuda o FAQ accesible desde el menú de configuración.
 
+#### 5.4. Video About the Product
+El video About-the-Product de HydroSmart tiene una orientación promocional y demostrativa, diseñado para presentar el modelo de negocio, las características y los beneficios principales de nuestra plataforma web. A través de este material audiovisual, los visitantes del Landing Page y los usuarios de la aplicación pueden familiarizarse con los flujos de interacción clave y la propuesta de valor de nuestra solución para la gestión inteligente del consumo de agua.
+
+El video inicia con una demostración del proceso de inicio de sesión (Login), ilustrando cómo los usuarios pueden acceder a la plataforma mediante cuentas pre-registradas para los roles de Administrador de Edificio y Residente.
+
+A continuación, se presenta una navegación detallada por el Dashboard del Administrador, donde se exponen las funcionalidades centrales de la plataforma:
+
+-Visualización del consumo diario y estadísticas mensuales.
+-Gestión de alertas activas (como posibles fugas de agua o metas mensuales en riesgo).
+-Monitoreo de las metas de ahorro y presupuestos.
+-Desglose del consumo por categoría (baños, cocina, lavandería).
+-Sección de Unidades para gestionar el consumo detallado por piso y residente.
+-Gestión de Dispositivos activos y sensores.
+-Generación de Reportes interactivos con gráficos y tablas exportables.
+-Opciones de Configuración para alertas automáticas y preferencias del sistema.
+-Administración del Perfil de usuario.
+
+Finalmente, el video demuestra la vista del Residente, resaltando una interfaz simplificada centrada en las necesidades de un inquilino: Dashboard, Reportes y Perfil, mostrando cómo cada usuario puede monitorear su consumo individual, visualizar sus propias alertas y generar reportes personalizados.
+
+URL del video en YouTube: https://youtu.be/MReXeYb1InE
+
+Timing: 03:31 minutos.
+
 ---
 
 # Conclusiones y Recomendaciones
