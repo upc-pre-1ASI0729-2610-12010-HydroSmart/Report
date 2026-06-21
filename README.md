@@ -2516,8 +2516,12 @@ A continuación, la relación de endpoints documentados por bounded context.
 
 **Capturas de la documentación (Swagger UI):**
 
-`⚠️ FALTANTE: insertar capturas de la interacción con Swagger UI usando datos de muestra (p. ej. login obteniendo el token, ejecución de GET /api/sensors, GET /api/units, etc.). Ej.: ![swagger-auth](./images/swagger-auth.png), ![swagger-sensors](./images/swagger-sensors.png)`
-
+<div>
+<img src="images/swagger-open1.jpeg" alt="insights-contributors-sprint3" width="800">
+</div>
+<div>
+<img src="images/swagger-open2.jpeg" alt="insights-contributors-sprint3" width="800">
+</div>
 **Commits relacionados con la documentación de Web Services:** la documentación se generó automáticamente con springdoc-openapi a partir de la implementación de cada bounded context; los commits asociados son los listados en la sección 5.2.3.4 (repositorio HydroSmart-backend).
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
@@ -2525,12 +2529,19 @@ A continuación, la relación de endpoints documentados por bounded context.
 Durante el Sprint 3 el equipo configuró el entorno de ejecución **local e integrado** del sistema completo: backend Spring Boot + base de datos MySQL + frontend Angular.
 
 - **Base de datos:** MySQL local (`hydrosmart_db`), creada automáticamente con `createDatabaseIfNotExist=true` y poblada en cada arranque por `DataSeeder` con usuarios, edificios, unidades, sensores, lecturas, alertas y metas de ahorro de muestra.
-- **Backend:** Aplicación Spring Boot ejecutándose en `http://localhost:8080`, con CORS configurado para el frontend, seguridad JWT y Swagger UI disponible en `/swagger-ui.html`.
-- **Frontend:** Aplicación Angular ejecutándose en `http://localhost:4200` (`ng serve`), apuntando al backend mediante `environment.apiUrl = 'http://localhost:8080/api'`.
+- **Backend:** Aplicación Spring Boot ejecutándose en `http://localhost:8080`, con CORS configurado para el frontend, seguridad JWT y Swagger UI disponible en `https://hydrosmart-backend-dg7q.onrender.com/swagger-ui/index.html`.
+- **Frontend:** Aplicación Angular ejecutándose en `hydro-smart-front.vercel.app` , apuntando al backend mediante `https://hydrosmart-backend-dg7q.onrender.com`.
 
-> Estado del despliegue en la nube: en este Sprint la integración se validó en entorno **local**. **Aún no se configuró un despliegue en proveedor cloud** para el backend ni una base de datos administrada. Como trabajo siguiente se recomienda desplegar el backend (p. ej. Render/Railway) con una instancia MySQL administrada, actualizar `environment.production` con la URL pública de la API y redeplegar el frontend (Netlify) apuntando a dicha API.
 
-`⚠️ FALTANTE: si se realizó algún despliegue en la nube, insertar capturas y URLs (proveedor, configuración del servicio, base de datos administrada, variables de entorno). Si solo se ejecutó en local, incluir capturas del backend corriendo (consola/Swagger) y del frontend conectado. Ej.: ![deploy-backend-local](./images/deploy-backend-local.png)`
+<div>
+  <img src="images/evidence-frontend-deployment.jpeg" alt="Deployment Evidence" width="800">
+</div>
+
+
+<div>
+<img src="images/render-open1.jpeg" alt="insights-contributors-sprint3" width="800">
+</div>
+
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 
@@ -2568,7 +2579,7 @@ Resumen de contribuciones por integrante (según commits del Sprint 3):
 
 - `![network-graph](./images/network-graph.png)` — Network graph mostrando las ramas por bounded context.
 
-> Recomendación para completar las evidencias: dado que las ramas de bounded context aún no están integradas a `main`, la vista de *Contributors* del backend puede mostrar pocos autores hasta que se realicen los merges. Conviene consolidar las ramas vía Pull Requests antes de generar las capturas de analíticos, de modo que la contribución de todos los integrantes quede reflejada en la rama principal.
+
 
 
 ## 5.3. Validation Interviews
