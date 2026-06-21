@@ -2442,18 +2442,26 @@ El control de acceso se aplica con `authGuard` (rutas que requieren sesión) y `
 
 **Capturas de las vistas implementadas:**
 
-`⚠️ FALTANTE: insertar los screenshots de cada vista en ejecución (consumiendo el backend real). Sugeridas:`
-- `![execution-login](./images/execution-login.png)`
-- `![execution-dashboard](./images/execution-dashboard.png)`
-- `![execution-devices](./images/execution-devices.png)`
-- `![execution-units](./images/execution-units.png)`
-- `![execution-reports](./images/execution-reports.png)`
-- `![execution-settings](./images/execution-settings.png)`
-- `![execution-profile](./images/execution-profile.png)`
+<div>
+<img src="images/conexion.png" alt="insights-contributors-sprint3" width="800">
+</div>
+<div>
+<img src="images/conexion2.png" alt="insights-contributors-sprint3" width="800">
+</div>
+<div>
+<img src="images/conexion3.png" alt="insights-contributors-sprint3" width="800">
+</div>
+<div>
+<img src="images/conexion4.png" alt="insights-contributors-sprint3" width="800">
+</div>
+<div>
+<img src="images/conexion5.png" alt="insights-contributors-sprint3" width="800">
+</div>
+
 
 **Video de demostración:**
 
-`⚠️ FALTANTE: insertar el enlace al video que ilustre y explique la navegación y el funcionamiento del Sprint 3 (login → dashboard → gestión de unidades/sensores → alertas → reportes), mostrando los datos provenientes del backend.`
+URL del video en YouTube: https://youtu.be/MReXeYb1InE
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
